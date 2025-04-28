@@ -206,41 +206,63 @@ const SudokuSolverSupreme = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-50 p-4">
-      <h1 className="text-3xl font-bold text-gray-800 mt-4 mb-2">Sudoku Solver Supreme</h1>
-      <h2 className="text-lg text-gray-600 mb-6">AI-Powered Constraint Satisfaction Problem Solver</h2>
+    <div className="flex flex-col items-center min-h-screen p-4">
+      <h1 className="text-4xl font-bold mt-4 mb-2 cyber-title">SSS._SUDOKU_SOLVER_SUPREME</h1>
+      <h2 className="text-lg text-neon-pink mb-6">
+        <span className="">AI-algorithm powered sudoku solver and visualizer.</span>
+      </h2>
       
-      <ControlPanel 
-        solving={solving}
-        visualizeSteps={visualizeSteps}
-        setVisualizeSteps={setVisualizeSteps}
-        handleSolve={handleSolve}
-        handleReset={handleReset}
-        loadExample={loadExample}
-      />
+      <div className="section-divider"></div>
       
-      <StatusMessage error={error} solved={solved} />
-      
-      {(solved || (solutionPath.length > 0 && currentPathIndex > 0)) && (
-        <StatsDisplay 
-          stats={stats}
-          solutionPath={solutionPath}
-          currentPathIndex={currentPathIndex}
-          difficultyText={difficultyText}
+      {/* Control panel */}
+      <div className="w-full max-w-4xl mb-6 cyber-panel p-4">
+        <ControlPanel 
+          solving={solving}
+          visualizeSteps={visualizeSteps}
+          setVisualizeSteps={setVisualizeSteps}
+          handleSolve={handleSolve}
+          handleReset={handleReset}
+          loadExample={loadExample}
         />
+      </div>
+      
+      {/* Status message display */}
+      {(error || solved) && (
+        <div className={`w-full max-w-4xl mb-4 cyber-panel ${error ? 'error' : 'success'} p-4`}>
+          <StatusMessage error={error} solved={solved} />
+        </div>
       )}
       
-      <SudokuGrid 
-        board={board}
-        originalBoard={originalBoard}
-        solutionPath={solutionPath}
-        currentPathIndex={currentPathIndex}
-        handleCellChange={handleCellChange}
-        solving={solving}
-        solved={solved}
-      />
+      {(solved || (solutionPath.length > 0 && currentPathIndex > 0)) && (
+        <div className="w-full max-w-4xl mb-6 cyber-panel p-4">
+          <StatsDisplay 
+            stats={stats}
+            solutionPath={solutionPath}
+            currentPathIndex={currentPathIndex}
+            difficultyText={difficultyText}
+          />
+        </div>
+      )}
       
-      <TechnicalExplanation />
+      {/* Sudoku grid */}
+      <div className="w-full max-w-4xl mb-6 flex justify-center">
+        <SudokuGrid 
+          board={board}
+          originalBoard={originalBoard}
+          solutionPath={solutionPath}
+          currentPathIndex={currentPathIndex}
+          handleCellChange={handleCellChange}
+          solving={solving}
+          solved={solved}
+        />
+      </div>
+      
+      <div className="section-divider"></div>
+      
+      {/* Technical explanation */}
+      <div className="w-full max-w-4xl cyber-panel p-4 mb-10">
+        <TechnicalExplanation />
+      </div>
     </div>
   );
 };

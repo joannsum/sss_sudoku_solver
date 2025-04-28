@@ -1,5 +1,5 @@
 import React from 'react';
-import { GRID_SIZE, EMPTY_CELL } from './SudokuSolverSupreme';
+import { GRID_SIZE, BOX_SIZE, EMPTY_CELL } from './SudokuSolverSupreme';
 
 interface SudokuGridProps {
   board: number[][];
@@ -20,66 +20,72 @@ const SudokuGrid: React.FC<SudokuGridProps> = ({
   solving,
   solved
 }) => {
-  // Render a cell
-  const renderCell = (row: number, col: number) => {
-    const value = board[row][col];
-    const isOriginal = originalBoard[row][col] !== EMPTY_CELL;
-    const isHighlighted = solutionPath.length > 0 && 
-                         currentPathIndex > 0 && 
-                         currentPathIndex <= solutionPath.length &&
-                         solutionPath[currentPathIndex - 1].row === row &&
-                         solutionPath[currentPathIndex - 1].col === col;
+  const getClassForCell = (row: number, col: number, value: number) => {
+    let cellClass = "sudoku-cell w-10 h-10 text-center text-lg font-bold flex items-center justify-center";
     
-    // Determine cell styles
-    const cellBorderClass = getBorderStyles(row, col);
-    const cellColorClass = getCellColorClass(row, col, isOriginal, isHighlighted);
-    
-    return (
-      <input
-        key={`cell-${row}-${col}`}
-        type="text"
-        maxLength={1}
-        value={value === 0 ? '' : value.toString()}
-        onChange={(e) => handleCellChange(row, col, e.target.value)}
-        className={`w-full h-full text-center font-bold text-lg ${cellBorderClass} ${cellColorClass} focus:outline-none transition-colors duration-200`}
-        readOnly={isOriginal || solving || solved}
-      />
-    );
-  };
-  
-  // Helper function to get cell border styles
-  const getBorderStyles = (row: number, col: number) => {
-    let borderClass = "border border-gray-300";
-    
-    if (row % 3 === 0) borderClass += " border-t-2 border-t-gray-800";
-    if (row === 8) borderClass += " border-b-2 border-b-gray-800";
-    if (col % 3 === 0) borderClass += " border-l-2 border-l-gray-800";
-    if (col === 8) borderClass += " border-r-2 border-r-gray-800";
-    
-    return borderClass;
-  };
-  
-  // Helper function to get cell color class
-  const getCellColorClass = (row: number, col: number, isOriginal: boolean, isHighlighted: boolean) => {
-    if (isHighlighted) {
-      return "bg-green-200 text-green-800";
-    } else if (isOriginal) {
-      return "bg-gray-100 text-gray-800";
-    } else if (board[row][col] !== EMPTY_CELL) {
-      return "bg-white text-blue-600";
+    // Highlight original cells
+    if (originalBoard[row][col] !== EMPTY_CELL) {
+      cellClass += " original";
+    } 
+    // Highlight solved cells
+    else if (value !== EMPTY_CELL && (solved || currentPathIndex > 0)) {
+      cellClass += " solved";
     }
-    return "bg-white text-gray-800";
+    
+    // Highlight current cell being considered in animation
+    if (currentPathIndex > 0 && solutionPath.length > 0 && currentPathIndex - 1 < solutionPath.length) {
+      const currentStep = solutionPath[currentPathIndex - 1];
+      if (currentStep && currentStep.row === row && currentStep.col === col) {
+        cellClass += " highlight";
+      }
+    }
+    
+    return cellClass;
   };
 
   return (
-    <div className="grid grid-cols-9 w-full max-w-md mb-8 border-2 border-gray-800">
-      {Array(GRID_SIZE).fill(0).map((_, row) => (
-        Array(GRID_SIZE).fill(0).map((_, col) => (
-          <div key={`${row}-${col}`} className="aspect-square">
-            {renderCell(row, col)}
+    <div className="sudoku-container relative p-1 rounded">
+      <div className="sudoku-grid grid grid-cols-3 gap-2 bg-grid-border p-2 rounded">
+        {Array.from({ length: BOX_SIZE }).map((_, boxRow) => (
+          Array.from({ length: BOX_SIZE }).map((_, boxCol) => (
+            <div 
+              key={`box-${boxRow}-${boxCol}`} 
+              className="box-grid grid grid-cols-3 gap-1 bg-grid-background p-1 border border-neon-blue"
+            >
+              {Array.from({ length: BOX_SIZE }).map((_, cellRow) => (
+                Array.from({ length: BOX_SIZE }).map((_, cellCol) => {
+                  const row = boxRow * BOX_SIZE + cellRow;
+                  const col = boxCol * BOX_SIZE + cellCol;
+                  const cell = board[row][col];
+                  
+                  return (
+                    <input
+                      key={`cell-${row}-${col}`}
+                      type="text"
+                      value={cell === EMPTY_CELL ? '' : cell.toString()}
+                      onChange={(e) => handleCellChange(row, col, e.target.value)}
+                      className={getClassForCell(row, col, cell)}
+                      maxLength={1}
+                      disabled={solving || solved || originalBoard[row][col] !== EMPTY_CELL}
+                      aria-label={`Cell R${row + 1}C${col + 1}`}
+                    />
+                  );
+                })
+              ))}
+            </div>
+          ))
+        ))}
+      </div>
+      
+      {/* Loading overlay for visualization */}
+      {solving && (
+        <div className="absolute inset-0 flex items-center justify-center bg-grid-background bg-opacity-80 z-10">
+          <div className="flex flex-col items-center">
+            <div className="cyber-spinner mb-4"></div>
+            <div className="loading-text text-xl">SOLVING_MATRIX</div>
           </div>
-        ))
-      ))}
+        </div>
+      )}
     </div>
   );
 };

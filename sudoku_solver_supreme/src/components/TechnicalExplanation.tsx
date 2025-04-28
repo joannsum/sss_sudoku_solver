@@ -3,22 +3,61 @@ import { Info } from 'lucide-react';
 
 const TechnicalExplanation: React.FC = () => {
   return (
-    <div className="max-w-2xl bg-white p-5 rounded-lg shadow-sm border border-gray-200 mb-8">
-      <h3 className="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2">
-        <Info className="h-5 w-5 text-blue-500" />
-        How It Works
+    <div className="cyber-panel max-w-2xl p-5 mb-8 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-neon-blue opacity-70"></div>
+      <div className="absolute top-0 right-0 w-1 h-full bg-neon-pink opacity-70"></div>
+      <div className="absolute bottom-0 right-0 w-full h-1 bg-neon-pink opacity-70"></div>
+      <div className="absolute bottom-0 left-0 w-1 h-full bg-neon-blue opacity-70"></div>
+      
+      <h3 className="text-lg font-bold text-neon-blue mb-4 flex items-center gap-2 uppercase tracking-wider">
+        <Info className="h-5 w-5" />
+        SYS::ALGORITHM_SPECS
       </h3>
-      <div className="text-sm text-gray-600 space-y-2">
-        <p>
-          This solver implements Sudoku as a constraint satisfaction problem using:
+      
+      <div className="text-sm text-foreground space-y-3">
+        <p className="border-l-2 border-neon-purple pl-3 py-1">
+          This matrix solver implements Sudoku as a constraint satisfaction problem using advanced algorithmic approaches:
         </p>
-        <ul className="list-disc list-inside ml-2 space-y-1">
-          <li><span className="font-medium text-gray-700">Backtracking Search</span> - Systematic search through possible assignments</li>
-          <li><span className="font-medium text-gray-700">MRV Heuristic</span> - Always selects the most constrained cell first</li>
-          <li><span className="font-medium text-gray-700">LCV Heuristic</span> - Orders values to maintain maximum flexibility</li>
-          <li><span className="font-medium text-gray-700">Forward Checking</span> - Maintains arc consistency during search</li>
-          <li><span className="font-medium text-gray-700">Difficulty Estimation</span> - Analyzes solving complexity through multiple metrics</li>
+        
+        <ul className="space-y-2 pl-2">
+          <li className="flex items-start gap-2">
+            <span className="text-cyber-yellow">[01]</span>
+            <span className="font-bold text-neon-blue">Backtracking Search</span>
+            <span className="text-foreground opacity-90">- Systematic search through possible assignments</span>
+          </li>
+          
+          <li className="flex items-start gap-2">
+            <span className="text-cyber-yellow">[02]</span>
+            <span className="font-bold text-neon-blue">MRV Heuristic</span>
+            <span className="text-foreground opacity-90">- Always selects the most constrained cell first</span>
+          </li>
+          
+          <li className="flex items-start gap-2">
+            <span className="text-cyber-yellow">[03]</span>
+            <span className="font-bold text-neon-blue">LCV Heuristic</span>
+            <span className="text-foreground opacity-90">- Orders values to maintain maximum flexibility</span>
+          </li>
+          
+          <li className="flex items-start gap-2">
+            <span className="text-cyber-yellow">[04]</span>
+            <span className="font-bold text-neon-blue">Forward Checking</span>
+            <span className="text-foreground opacity-90">- Maintains arc consistency during search</span>
+          </li>
+          
+          <li className="flex items-start gap-2">
+            <span className="text-cyber-yellow">[05]</span>
+            <span className="font-bold text-neon-blue">Difficulty Estimation</span>
+            <span className="text-foreground opacity-90">- Analyzes solving complexity through multiple metrics</span>
+          </li>
         </ul>
+      </div>
+      
+      {/* Circuit-like decoration at bottom */}
+      <div className="mt-4 pt-2 border-t border-grid-border flex">
+        <div className="h-1 w-1/3 bg-neon-blue opacity-50 mr-1"></div>
+        <div className="h-1 w-1/6 bg-neon-pink opacity-50 mr-1"></div>
+        <div className="h-1 w-1/12 bg-cyber-yellow opacity-50 mr-1"></div>
       </div>
     </div>
   );

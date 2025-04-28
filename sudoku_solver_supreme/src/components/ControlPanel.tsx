@@ -1,5 +1,4 @@
 import React from 'react';
-import { RefreshCw, Play } from 'lucide-react';
 
 interface ControlPanelProps {
   solving: boolean;
@@ -19,60 +18,76 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
   loadExample
 }) => {
   return (
-    <>
-      {/* Main controls */}
-      <div className="flex flex-wrap gap-2 mb-6 justify-center">
-        <button 
+    <div className="flex flex-col md:flex-row justify-between items-center gap-4 w-full">
+      <div className="flex flex-wrap gap-2">
+        <button
           onClick={handleSolve}
           disabled={solving}
-          className="flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+          className="cyber-button"
+          aria-label="Solve Puzzle"
         >
-          {solving ? <RefreshCw className="animate-spin h-4 w-4" /> : <Play className="h-4 w-4" />}
-          {solving ? 'Solving...' : 'Solve'}
+          {solving ? (
+            <span className="flex items-center gap-2">
+              <div className="h-4 w-4 border-2 border-transparent border-t-neon-blue rounded-full animate-spin"></div>
+              EXECUTING...
+            </span>
+          ) : (
+            "RUN_SOLVER.EXE"
+          )}
         </button>
         
-        <button 
+        <button
           onClick={handleReset}
-          className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+          disabled={solving}
+          className="cyber-button pink"
+          aria-label="Reset Grid"
         >
-          Reset
+          CLEAR_GRID
         </button>
-        
-        <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-md">
-          <input
-            type="checkbox"
-            id="visualize"
-            checked={visualizeSteps}
-            onChange={(e) => setVisualizeSteps(e.target.checked)}
-            className="h-4 w-4 text-blue-600 focus:ring-blue-500"
-          />
-          <label htmlFor="visualize" className="text-sm text-gray-700">Visualize Steps</label>
-        </div>
       </div>
       
-      {/* Example loaders */}
-      <div className="flex flex-wrap gap-2 mb-6 justify-center">
-        <span className="text-sm text-gray-600 mr-2 flex items-center">Load Example:</span>
-        <button 
+      <div className="flex items-center gap-2">
+        <label className="text-neon-blue flex items-center gap-2">
+          <span>VISUALIZE_PROCESS:</span>
+          <label className="cyber-toggle">
+            <input
+              type="checkbox"
+              checked={visualizeSteps}
+              onChange={(e) => setVisualizeSteps(e.target.checked)}
+              disabled={solving}
+            />
+            <span className="cyber-toggle-slider"></span>
+          </label>
+        </label>
+      </div>
+      
+      <div className="flex flex-wrap gap-2">
+        <button
           onClick={() => loadExample('easy')}
-          className="px-3 py-1 bg-green-100 text-green-800 rounded-md hover:bg-green-200"
+          disabled={solving}
+          className="cyber-button yellow"
+          aria-label="Load Easy Example"
         >
-          Easy
+          LOAD_EASY
         </button>
-        <button 
+        <button
           onClick={() => loadExample('medium')}
-          className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-md hover:bg-yellow-200"
+          disabled={solving}
+          className="cyber-button purple"
+          aria-label="Load Medium Example"
         >
-          Medium
+          LOAD_MEDIUM
         </button>
-        <button 
+        <button
           onClick={() => loadExample('hard')}
-          className="px-3 py-1 bg-red-100 text-red-800 rounded-md hover:bg-red-200"
+          disabled={solving}
+          className="cyber-button pink"
+          aria-label="Load Hard Example"
         >
-          Hard
+          LOAD_HARD
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
