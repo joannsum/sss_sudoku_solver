@@ -1,26 +1,356 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --neon-pink: #ff2a6d;
+  --neon-blue: #05d9e8;
+  --neon-purple: #d442f8;
+  --cyber-yellow: #fffc00;
+  --grid-glow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+  --background: #030618;
+  --foreground: #d1f7ff;
+  --grid-background: #0e192c;
+  --grid-border: #3a3f58;
+  --solved-cell: rgba(5, 217, 232, 0.15);
+  --original-cell: rgba(255, 42, 109, 0.15);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Blender Pro", "Share Tech Mono", monospace;
+  --font-mono: "Share Tech Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Blender Pro';
+  src: url('/fonts/BlenderPro-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: 
+    linear-gradient(rgba(10, 20, 40, 0.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 20, 40, 0.8) 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Share Tech Mono', monospace;
+  text-shadow: 0 0 5px rgba(209, 247, 255, 0.5);
+}
+
+/* Cyber button styles */
+.cyber-button {
+  background: linear-gradient(45deg, #192438, #111827);
+  border: 1px solid var(--neon-blue);
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+  box-shadow: 0 0 10px rgba(5, 217, 232, 0.5);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-button:hover {
+  background: linear-gradient(45deg, #111827, #192438);
+  box-shadow: 0 0 15px rgba(5, 217, 232, 0.8);
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+
+.cyber-button:active {
+  background: #111827;
+}
+
+.cyber-button.pink {
+  border-color: var(--neon-pink);
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+  box-shadow: 0 0 10px rgba(255, 42, 109, 0.5);
+}
+
+.cyber-button.pink:hover {
+  box-shadow: 0 0 15px rgba(255, 42, 109, 0.8);
+  text-shadow: 0 0 8px var(--neon-pink);
+}
+
+.cyber-button.yellow {
+  border-color: var(--cyber-yellow);
+  color: var(--cyber-yellow);
+  text-shadow: 0 0 5px var(--cyber-yellow);
+  box-shadow: 0 0 10px rgba(255, 252, 0, 0.5);
+}
+
+.cyber-button.yellow:hover {
+  box-shadow: 0 0 15px rgba(255, 252, 0, 0.8);
+  text-shadow: 0 0 8px var(--cyber-yellow);
+}
+
+.cyber-button.purple {
+  border-color: var(--neon-purple);
+  color: var(--neon-purple);
+  text-shadow: 0 0 5px var(--neon-purple);
+  box-shadow: 0 0 10px rgba(212, 66, 248, 0.5);
+}
+
+.cyber-button.purple:hover {
+  box-shadow: 0 0 15px rgba(212, 66, 248, 0.8);
+  text-shadow: 0 0 8px var(--neon-purple);
+}
+
+/* Sudoku grid styles */
+/* Enhanced Sudoku grid styles */
+.sudoku-container {
+  background: linear-gradient(45deg, rgba(3, 6, 24, 0.8), rgba(14, 25, 44, 0.8));
+  box-shadow: 0 0 20px var(--neon-blue), inset 0 0 10px rgba(5, 217, 232, 0.3);
+  border: 2px solid var(--neon-blue);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sudoku-grid {
+  box-shadow: var(--grid-glow);
+  background-color: rgba(58, 63, 88, 0.3);
+}
+
+.box-grid {
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(5, 217, 232, 0.2);
+}
+
+.box-grid:hover {
+  box-shadow: inset 0 0 8px rgba(5, 217, 232, 0.4);
+}
+
+.sudoku-cell {
+  background-color: rgba(14, 25, 44, 0.7);
+  border: 1px solid rgba(58, 63, 88, 0.5);
+  color: var(--foreground);
+  transition: all 0.3s ease;
+}
+
+.sudoku-cell:focus {
+  background-color: rgba(5, 217, 232, 0.2);
+  outline: none;
+  box-shadow: 0 0 8px var(--neon-blue) inset;
+  color: var(--neon-blue);
+}
+
+.sudoku-cell.original {
+  background-color: var(--original-cell);
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+  font-weight: bold;
+}
+
+.sudoku-cell.solved {
+  background-color: var(--solved-cell);
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.sudoku-cell.highlight {
+  background-color: rgba(212, 66, 248, 0.2);
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 8px var(--neon-purple) inset;
+  color: var(--neon-purple);
+  text-shadow: 0 0 5px var(--neon-purple);
+}
+
+/* Fix for grid responsiveness */
+@media (max-width: 500px) {
+  .sudoku-cell {
+    width: 8vw;
+    height: 8vw;
+    font-size: 1rem;
+  }
+}
+
+/* Section dividers and borders */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.cyber-panel {
+  border: 1px solid var(--neon-blue);
+  background: rgba(30, 41, 59, 0.7);
+  box-shadow: 0 0 10px rgba(5, 217, 232, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.cyber-panel.error {
+  border-color: var(--neon-pink);
+  box-shadow: 0 0 10px rgba(255, 42, 109, 0.3);
+}
+
+.cyber-panel.success {
+  border-color: var(--cyber-yellow);
+  box-shadow: 0 0 10px rgba(255, 252, 0, 0.3);
+}
+
+/* Typography */
+h1.cyber-title {
+  font-family: 'Blender Pro', 'Share Tech Mono', monospace;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+h1.cyber-title::before,
+h1.cyber-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--neon-blue);
+  opacity: 0.1;
+  animation: glitch 2s infinite alternate-reverse;
+}
+
+h1.cyber-title::before {
+  left: 2px;
+  clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+  animation-delay: -1s;
+}
+
+h1.cyber-title::after {
+  left: -2px;
+  clip-path: polygon(0 60%, 100% 60%, 100% 75%, 0 75%);
+  animation-delay: -2s;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(-2px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+.loading-text {
+  color: var(--neon-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-text::after {
+  content: "_";
+  position: absolute;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.cyber-spinner {
+  border: 4px solid rgba(5, 217, 232, 0.1);
+  border-left: 4px solid var(--neon-blue);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Stats display */
+.cyber-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.stat-card {
+  background: rgba(14, 25, 44, 0.7);
+  border: 1px solid var(--neon-purple);
+  box-shadow: 0 0 10px rgba(212, 66, 248, 0.3);
+  padding: 1rem;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--neon-purple);
+  text-shadow: 0 0 5px var(--neon-purple);
+}
+
+/* Toggle switch for visualization */
+.cyber-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.cyber-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cyber-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #192438;
+  border: 1px solid var(--neon-blue);
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.cyber-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 3px;
+  background-color: var(--foreground);
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .cyber-toggle-slider {
+  background-color: rgba(5, 217, 232, 0.2);
+}
+
+input:checked + .cyber-toggle-slider:before {
+  transform: translateX(29px);
+  background-color: var(--neon-blue);
 }

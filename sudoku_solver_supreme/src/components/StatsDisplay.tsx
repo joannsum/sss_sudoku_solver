@@ -1,5 +1,4 @@
 import React from 'react';
-import { Award } from 'lucide-react';
 
 interface StatsDisplayProps {
   stats: {
@@ -18,41 +17,52 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({
   currentPathIndex,
   difficultyText
 }) => {
+  const getDifficultyColor = () => {
+    const { difficultyScore } = stats;
+    if (difficultyScore < 30) return 'text-neon-blue';
+    if (difficultyScore < 60) return 'text-neon-purple';
+    return 'text-neon-pink';
+  };
+
   return (
-    <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-100 max-w-lg">
-      <h3 className="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2">
-        <Award className="h-5 w-5 text-amber-500" />
-        Solution Statistics
-      </h3>
-      <div className="grid grid-cols-2 gap-2 text-sm">
-        <div className="text-gray-600">Time to solve:</div>
-        <div className="font-medium text-gray-800">{stats.timeElapsed}s</div>
-        
-        <div className="text-gray-600">Backtracking steps:</div>
-        <div className="font-medium text-gray-800">{stats.backtrackCount}</div>
-        
-        <div className="text-gray-600">Solution path length:</div>
-        <div className="font-medium text-gray-800">{solutionPath.length}</div>
-        
-        <div className="text-gray-600">Current step:</div>
-        <div className="font-medium text-gray-800">{currentPathIndex} / {solutionPath.length}</div>
-        
-        <div className="text-gray-600">Difficulty score:</div>
-        <div className="font-medium text-gray-800">{stats.difficultyScore}</div>
-        
-        <div className="text-gray-600">Difficulty level:</div>
-        <div className="font-medium text-gray-800">
-          <span 
-            className={`px-2 py-0.5 rounded ${
-              difficultyText === 'Easy' ? 'bg-green-100 text-green-800' :
-              difficultyText === 'Medium' ? 'bg-yellow-100 text-yellow-800' :
-              difficultyText === 'Hard' ? 'bg-orange-100 text-orange-800' :
-              'bg-red-100 text-red-800'
-            }`}
-          >
-            {difficultyText}
-          </span>
+    <div className="w-full">
+      <h3 className="text-lg text-neon-blue mb-3 uppercase">SYSTEM_METRICS:</h3>
+      <div className="cyber-stats">
+        <div className="stat-card">
+          <h4 className="text-sm uppercase mb-1">SOLUTION_TIME</h4>
+          <div className="stat-value">{stats.timeElapsed.toFixed(2)}s</div>
         </div>
+
+        <div className="stat-card">
+          <h4 className="text-sm uppercase mb-1">BACKTRACK_COUNT</h4>
+          <div className="stat-value">{stats.backtrackCount}</div>
+        </div>
+
+        <div className="stat-card">
+          <h4 className="text-sm uppercase mb-1">DIFFICULTY_RATING</h4>
+          <div className={`stat-value ${getDifficultyColor()}`}>
+            {stats.difficultyScore.toFixed(1)}
+          </div>
+          <div className="text-xs mt-1 uppercase">{difficultyText}</div>
+        </div>
+
+        {solutionPath.length > 0 && (
+          <div className="stat-card">
+            <h4 className="text-sm uppercase mb-1">SOLVER_PROGRESS</h4>
+            <div className="stat-value">
+              {currentPathIndex}/{solutionPath.length}
+            </div>
+            <div className="w-full bg-grid-border rounded-full h-2 mt-2">
+              <div
+                className="bg-neon-purple h-2 rounded-full"
+                style={{
+                  width: `${Math.round((currentPathIndex / solutionPath.length) * 100)}%`,
+                  boxShadow: '0 0 8px var(--neon-purple)'
+                }}
+              ></div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
