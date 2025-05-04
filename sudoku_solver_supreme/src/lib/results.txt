@@ -1,0 +1,920 @@
+(base) jo@fedora:~/Documents/school-code/ai/sss_sudoku_solver/sudoku_solver_supreme/src/lib$ tsx main.ts
+
+
+
+EASY Puzzles:
+Average time improvement: -369.5%
+Average node reduction: 91.1%
+Average backtracks: 1.9
+
+MEDIUM Puzzles:
+Average time improvement: -603.2%
+Average node reduction: 90.1%
+Average backtracks: 1.5
+
+HARD Puzzles:
+Average time improvement: -1498.4%
+Average node reduction: 86.7%
+Average backtracks: 2.5
+[
+  {
+    "id": "easy_01",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 1.958908000000008,
+      "backtracks": 4157,
+      "nodes": 4209
+    },
+    "csp": {
+      "time": 1.9202159999999822,
+      "backtracks": 0,
+      "nodes": 51
+    },
+    "improvement": {
+      "timeReduction": 1.9751820912480713,
+      "nodeReduction": 98.78831076265146
+    }
+  },
+  {
+    "id": "easy_02",
+    "difficulty": "easy",
+    "givenCount": 36,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 12.146654999999981,
+      "backtracks": 49498,
+      "nodes": 49559
+    },
+    "csp": {
+      "time": 104.53528300000002,
+      "backtracks": 5,
+      "nodes": 60
+    },
+    "improvement": {
+      "timeReduction": -760.6096328577718,
+      "nodeReduction": 99.87893218184387
+    }
+  },
+  {
+    "id": "easy_03",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.9473969999999667,
+      "backtracks": 4191,
+      "nodes": 4239
+    },
+    "csp": {
+      "time": 0.7248130000000401,
+      "backtracks": 2,
+      "nodes": 47
+    },
+    "improvement": {
+      "timeReduction": 23.49426903398833,
+      "nodeReduction": 98.89124793583393
+    }
+  },
+  {
+    "id": "easy_04",
+    "difficulty": "easy",
+    "givenCount": 39,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 2159.5579879999996,
+      "backtracks": 9727332,
+      "nodes": 9727397
+    },
+    "csp": {
+      "time": 2.4706350000001294,
+      "backtracks": 4,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": 99.88559533878096,
+      "nodeReduction": 99.99934206448036
+    }
+  },
+  {
+    "id": "easy_05",
+    "difficulty": "easy",
+    "givenCount": 35,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 2.202584999999999,
+      "backtracks": 9949,
+      "nodes": 10008
+    },
+    "csp": {
+      "time": 5.549448000000211,
+      "backtracks": 5,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": -151.9515932415872,
+      "nodeReduction": 99.42046362909672
+    }
+  },
+  {
+    "id": "easy_06",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.23215299999992567,
+      "backtracks": 988,
+      "nodes": 989
+    },
+    "csp": {
+      "time": 1.0858220000000074,
+      "backtracks": 2,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": -367.718272001807,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "easy_07",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 199.5308070000001,
+      "backtracks": 879359,
+      "nodes": 879418
+    },
+    "csp": {
+      "time": 25.027622000000065,
+      "backtracks": 4,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": 87.45676300502305,
+      "nodeReduction": 99.99340472903671
+    }
+  },
+  {
+    "id": "easy_08",
+    "difficulty": "easy",
+    "givenCount": 39,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.037154999999984284,
+      "backtracks": 22,
+      "nodes": 68
+    },
+    "csp": {
+      "time": 0.2899809999998979,
+      "backtracks": 0,
+      "nodes": 45
+    },
+    "improvement": {
+      "timeReduction": -680.4629255820765,
+      "nodeReduction": 33.82352941176471
+    }
+  },
+  {
+    "id": "easy_09",
+    "difficulty": "easy",
+    "givenCount": 36,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.5553780000000188,
+      "backtracks": 2193,
+      "nodes": 2251
+    },
+    "csp": {
+      "time": 8.72345499999983,
+      "backtracks": 2,
+      "nodes": 57
+    },
+    "improvement": {
+      "timeReduction": -1470.72390335943,
+      "nodeReduction": 97.46779209240337
+    }
+  },
+  {
+    "id": "easy_10",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.19702200000028824,
+      "backtracks": 720,
+      "nodes": 770
+    },
+    "csp": {
+      "time": 0.3772820000003776,
+      "backtracks": 0,
+      "nodes": 49
+    },
+    "improvement": {
+      "timeReduction": -91.4923206544577,
+      "nodeReduction": 93.63636363636364
+    }
+  },
+  {
+    "id": "easy_11",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.07158699999990858,
+      "backtracks": 243,
+      "nodes": 295
+    },
+    "csp": {
+      "time": 0.9515179999998509,
+      "backtracks": 2,
+      "nodes": 51
+    },
+    "improvement": {
+      "timeReduction": -1229.17708522646,
+      "nodeReduction": 82.71186440677965
+    }
+  },
+  {
+    "id": "easy_12",
+    "difficulty": "easy",
+    "givenCount": 36,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.12410799999997835,
+      "backtracks": 416,
+      "nodes": 478
+    },
+    "csp": {
+      "time": 0.721320999999989,
+      "backtracks": 0,
+      "nodes": 61
+    },
+    "improvement": {
+      "timeReduction": -481.2042736971951,
+      "nodeReduction": 87.23849372384937
+    }
+  },
+  {
+    "id": "easy_13",
+    "difficulty": "easy",
+    "givenCount": 39,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 2.034407000000101,
+      "backtracks": 9990,
+      "nodes": 9991
+    },
+    "csp": {
+      "time": 0.22858999999971275,
+      "backtracks": 2,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": 88.76380193345278,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "easy_14",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.0482600000000275,
+      "backtracks": 151,
+      "nodes": 201
+    },
+    "csp": {
+      "time": 0.3833589999999276,
+      "backtracks": 0,
+      "nodes": 49
+    },
+    "improvement": {
+      "timeReduction": -694.3617903019253,
+      "nodeReduction": 75.62189054726367
+    }
+  },
+  {
+    "id": "easy_15",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 2.6830230000000483,
+      "backtracks": 12938,
+      "nodes": 12991
+    },
+    "csp": {
+      "time": 0.4193270000000666,
+      "backtracks": 0,
+      "nodes": 52
+    },
+    "improvement": {
+      "timeReduction": 84.37109931595596,
+      "nodeReduction": 99.59972288507429
+    }
+  },
+  {
+    "id": "medium_01",
+    "difficulty": "medium",
+    "givenCount": 30,
+    "expectedBacktracks": 3,
+    "basic": {
+      "time": 0.04791099999965809,
+      "backtracks": 151,
+      "nodes": 201
+    },
+    "csp": {
+      "time": 0.36932100000012724,
+      "backtracks": 0,
+      "nodes": 49
+    },
+    "improvement": {
+      "timeReduction": -670.8480307294001,
+      "nodeReduction": 75.62189054726367
+    }
+  },
+  {
+    "id": "medium_02",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 0.013409000000137894,
+      "backtracks": 9,
+      "nodes": 55
+    },
+    "csp": {
+      "time": 0.49294000000008964,
+      "backtracks": 0,
+      "nodes": 45
+    },
+    "improvement": {
+      "timeReduction": -3576.1876351332717,
+      "nodeReduction": 18.181818181818183
+    }
+  },
+  {
+    "id": "medium_03",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 16.90738599999986,
+      "backtracks": 78368,
+      "nodes": 78431
+    },
+    "csp": {
+      "time": 39.68821399999979,
+      "backtracks": 4,
+      "nodes": 62
+    },
+    "improvement": {
+      "timeReduction": -134.73891233097842,
+      "nodeReduction": 99.92094962451071
+    }
+  },
+  {
+    "id": "medium_04",
+    "difficulty": "medium",
+    "givenCount": 31,
+    "expectedBacktracks": 2,
+    "basic": {
+      "time": 1.291505000000143,
+      "backtracks": 6098,
+      "nodes": 6152
+    },
+    "csp": {
+      "time": 0.4388130000002093,
+      "backtracks": 0,
+      "nodes": 53
+    },
+    "improvement": {
+      "timeReduction": 66.02312805601521,
+      "nodeReduction": 99.13849154746424
+    }
+  },
+  {
+    "id": "medium_05",
+    "difficulty": "medium",
+    "givenCount": 27,
+    "expectedBacktracks": 6,
+    "basic": {
+      "time": 197.45386699999972,
+      "backtracks": 879359,
+      "nodes": 879418
+    },
+    "csp": {
+      "time": 23.48147599999993,
+      "backtracks": 4,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": 88.10786724171882,
+      "nodeReduction": 99.99340472903671
+    }
+  },
+  {
+    "id": "medium_06",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 2.094470000000001,
+      "backtracks": 8911,
+      "nodes": 8970
+    },
+    "csp": {
+      "time": 18.231577000000016,
+      "backtracks": 4,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": -770.4625513853149,
+      "nodeReduction": 99.35340022296543
+    }
+  },
+  {
+    "id": "medium_07",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 1.8791489999998703,
+      "backtracks": 8645,
+      "nodes": 8700
+    },
+    "csp": {
+      "time": 0.5942800000002535,
+      "backtracks": 0,
+      "nodes": 54
+    },
+    "improvement": {
+      "timeReduction": 68.37504636405657,
+      "nodeReduction": 99.37931034482759
+    }
+  },
+  {
+    "id": "medium_08",
+    "difficulty": "medium",
+    "givenCount": 30,
+    "expectedBacktracks": 3,
+    "basic": {
+      "time": 1888.2530460000003,
+      "backtracks": 8107105,
+      "nodes": 8107106
+    },
+    "csp": {
+      "time": 3315.901462,
+      "backtracks": 2,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": -75.6068377077041,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "medium_09",
+    "difficulty": "medium",
+    "givenCount": 27,
+    "expectedBacktracks": 7,
+    "basic": {
+      "time": 2.224584000001414,
+      "backtracks": 9467,
+      "nodes": 9526
+    },
+    "csp": {
+      "time": 0.8371179999994638,
+      "backtracks": 1,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": 62.369683500423825,
+      "nodeReduction": 99.3911400377913
+    }
+  },
+  {
+    "id": "medium_10",
+    "difficulty": "medium",
+    "givenCount": 32,
+    "expectedBacktracks": 1,
+    "basic": {
+      "time": 0.06432400000085181,
+      "backtracks": 284,
+      "nodes": 285
+    },
+    "csp": {
+      "time": 0.059713999999075895,
+      "backtracks": 0,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": 7.166842860697201,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "medium_11",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 85644.529532,
+      "backtracks": 373353499,
+      "nodes": 373353500
+    },
+    "csp": {
+      "time": 4.3225470000033965,
+      "backtracks": 2,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": 99.9949529210755,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "medium_12",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 0.056292000008397736,
+      "backtracks": 95,
+      "nodes": 157
+    },
+    "csp": {
+      "time": 2.347783999997773,
+      "backtracks": 1,
+      "nodes": 61
+    },
+    "improvement": {
+      "timeReduction": -4070.724080948495,
+      "nodeReduction": 61.146496815286625
+    }
+  },
+  {
+    "id": "medium_13",
+    "difficulty": "medium",
+    "givenCount": 30,
+    "expectedBacktracks": 3,
+    "basic": {
+      "time": 0.01089499999943655,
+      "backtracks": 6,
+      "nodes": 7
+    },
+    "csp": {
+      "time": 0.040227999998023733,
+      "backtracks": 1,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": -269.2335933924202,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "medium_14",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 2.890311000010115,
+      "backtracks": 12458,
+      "nodes": 12516
+    },
+    "csp": {
+      "time": 1.6708829999988666,
+      "backtracks": 3,
+      "nodes": 57
+    },
+    "improvement": {
+      "timeReduction": 42.19020029356636,
+      "nodeReduction": 99.54458293384468
+    }
+  },
+  {
+    "id": "medium_15",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 39.22796099999687,
+      "backtracks": 165421,
+      "nodes": 165483
+    },
+    "csp": {
+      "time": 5.840825999999652,
+      "backtracks": 1,
+      "nodes": 61
+    },
+    "improvement": {
+      "timeReduction": 85.1105541784338,
+      "nodeReduction": 99.96313820755002
+    }
+  },
+  {
+    "id": "hard_01",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 12,
+    "basic": {
+      "time": 15520.005333999987,
+      "backtracks": 69175252,
+      "nodes": 69175317
+    },
+    "csp": {
+      "time": 746.014646999989,
+      "backtracks": 8,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": 95.19320624609787,
+      "nodeReduction": 99.99990748145035
+    }
+  },
+  {
+    "id": "hard_02",
+    "difficulty": "hard",
+    "givenCount": 23,
+    "expectedBacktracks": 15,
+    "basic": {
+      "time": 11.118033000006108,
+      "backtracks": 49498,
+      "nodes": 49559
+    },
+    "csp": {
+      "time": 93.2242089999927,
+      "backtracks": 5,
+      "nodes": 60
+    },
+    "improvement": {
+      "timeReduction": -738.4955234432339,
+      "nodeReduction": 99.87893218184387
+    }
+  },
+  {
+    "id": "hard_03",
+    "difficulty": "hard",
+    "givenCount": 21,
+    "expectedBacktracks": 18,
+    "basic": {
+      "time": 2.3610550000012154,
+      "backtracks": 10227,
+      "nodes": 10291
+    },
+    "csp": {
+      "time": 1.1658600000082515,
+      "backtracks": 3,
+      "nodes": 63
+    },
+    "improvement": {
+      "timeReduction": 50.62122652764754,
+      "nodeReduction": 99.38781459527742
+    }
+  },
+  {
+    "id": "hard_04",
+    "difficulty": "hard",
+    "givenCount": 24,
+    "expectedBacktracks": 10,
+    "basic": {
+      "time": 0.4022850000037579,
+      "backtracks": 2191,
+      "nodes": 2192
+    },
+    "csp": {
+      "time": 0.27098400000249967,
+      "backtracks": 1,
+      "nodes": 0
+    },
+    "improvement": {
+      "timeReduction": 32.63880085015143,
+      "nodeReduction": 100
+    }
+  },
+  {
+    "id": "hard_05",
+    "difficulty": "hard",
+    "givenCount": 20,
+    "expectedBacktracks": 20,
+    "basic": {
+      "time": 0.03240599999844562,
+      "backtracks": 64,
+      "nodes": 131
+    },
+    "csp": {
+      "time": 1.2383560000016587,
+      "backtracks": 0,
+      "nodes": 66
+    },
+    "improvement": {
+      "timeReduction": -3721.3787572087185,
+      "nodeReduction": 49.61832061068702
+    }
+  },
+  {
+    "id": "hard_06",
+    "difficulty": "hard",
+    "givenCount": 25,
+    "expectedBacktracks": 9,
+    "basic": {
+      "time": 1.3062420000060229,
+      "backtracks": 6098,
+      "nodes": 6152
+    },
+    "csp": {
+      "time": 0.46954200000618584,
+      "backtracks": 0,
+      "nodes": 53
+    },
+    "improvement": {
+      "timeReduction": 64.05398080876125,
+      "nodeReduction": 99.13849154746424
+    }
+  },
+  {
+    "id": "hard_07",
+    "difficulty": "hard",
+    "givenCount": 23,
+    "expectedBacktracks": 14,
+    "basic": {
+      "time": 1605.669855,
+      "backtracks": 6943131,
+      "nodes": 6943196
+    },
+    "csp": {
+      "time": 112.31532199999492,
+      "backtracks": 5,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": 93.00507998887511,
+      "nodeReduction": 99.99907823428865
+    }
+  },
+  {
+    "id": "hard_08",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 16,
+    "basic": {
+      "time": 0.4650729999993928,
+      "backtracks": 1682,
+      "nodes": 1747
+    },
+    "csp": {
+      "time": 8.867188000003807,
+      "backtracks": 1,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": -1806.6228312577562,
+      "nodeReduction": 96.33657698912421
+    }
+  },
+  {
+    "id": "hard_09",
+    "difficulty": "hard",
+    "givenCount": 21,
+    "expectedBacktracks": 17,
+    "basic": {
+      "time": 0.041555999996489845,
+      "backtracks": 77,
+      "nodes": 143
+    },
+    "csp": {
+      "time": 1.0106729999970412,
+      "backtracks": 1,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": -2332.0747908422627,
+      "nodeReduction": 54.54545454545454
+    }
+  },
+  {
+    "id": "hard_10",
+    "difficulty": "hard",
+    "givenCount": 24,
+    "expectedBacktracks": 11,
+    "basic": {
+      "time": 0.039250000001629815,
+      "backtracks": 101,
+      "nodes": 161
+    },
+    "csp": {
+      "time": 0.7335429999948246,
+      "backtracks": 1,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": -1768.8993629665351,
+      "nodeReduction": 63.35403726708074
+    }
+  },
+  {
+    "id": "hard_11",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 13,
+    "basic": {
+      "time": 0.21497099999396596,
+      "backtracks": 777,
+      "nodes": 841
+    },
+    "csp": {
+      "time": 0.8103679999912856,
+      "backtracks": 0,
+      "nodes": 63
+    },
+    "improvement": {
+      "timeReduction": -276.96619544684256,
+      "nodeReduction": 92.5089179548157
+    }
+  },
+  {
+    "id": "hard_12",
+    "difficulty": "hard",
+    "givenCount": 23,
+    "expectedBacktracks": 14,
+    "basic": {
+      "time": 2.1726219999982277,
+      "backtracks": 9949,
+      "nodes": 10008
+    },
+    "csp": {
+      "time": 5.289848000000347,
+      "backtracks": 5,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": -143.47760447996302,
+      "nodeReduction": 99.42046362909672
+    }
+  },
+  {
+    "id": "hard_13",
+    "difficulty": "hard",
+    "givenCount": 21,
+    "expectedBacktracks": 19,
+    "basic": {
+      "time": 0.03296500000578817,
+      "backtracks": 62,
+      "nodes": 127
+    },
+    "csp": {
+      "time": 4.001974999991944,
+      "backtracks": 2,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": -12040.072802333552,
+      "nodeReduction": 49.60629921259843
+    }
+  },
+  {
+    "id": "hard_14",
+    "difficulty": "hard",
+    "givenCount": 20,
+    "expectedBacktracks": 21,
+    "basic": {
+      "time": 0.5488130000012461,
+      "backtracks": 2240,
+      "nodes": 2306
+    },
+    "csp": {
+      "time": 0.9408319999929518,
+      "backtracks": 1,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": -71.43034148076222,
+      "nodeReduction": 97.18126626192542
+    }
+  },
+  {
+    "id": "hard_15",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 15,
+    "basic": {
+      "time": 199.39671099999396,
+      "backtracks": 879359,
+      "nodes": 879418
+    },
+    "csp": {
+      "time": 23.755881999997655,
+      "backtracks": 4,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": 88.08612144058966,
+      "nodeReduction": 99.99340472903671
+    }
+  }
+]
