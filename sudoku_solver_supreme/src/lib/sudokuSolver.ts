@@ -27,12 +27,22 @@ export const isValid = (grid: number[][], row: number, col: number, value: numbe
   return true;
 };
 
-// Backtracking search with MRV, LCV, and forward checking
-export const solveWithBacktracking = (grid: number[][], path: any[] = [], backtrackCount = 0) => {
+interface SolveResult {
+  grid: number[][];
+  solved: boolean;
+  path: any[];
+  backtrackCount: number;
+}
+
+export const solveWithBacktracking = (
+  grid: number[][], 
+  path: any[] = [], 
+  backtrackCount = 0
+): SolveResult => {
   // Find the most constrained cell (MRV)
   const mrvCell = findMostConstrainedCell(grid);
   if (!mrvCell) {
-    // No empty cells left - we've solved it!
+    // No empty cells left = we've solved it!
     return { 
       grid: grid, 
       solved: true, 
@@ -113,7 +123,6 @@ const orderValuesByLCV = (grid: number[][], row: number, col: number, legalValue
   const valueScores = legalValues.map(value => {
     let eliminationCount = 0;
 
-    // Try this value and see how many possibilities it eliminates in related cells
     const testGrid = grid.map(row => [...row]);
     testGrid[row][col] = value;
 
@@ -153,7 +162,6 @@ const orderValuesByLCV = (grid: number[][], row: number, col: number, legalValue
 
 // Forward checking to maintain arc consistency
 const forwardCheck = (grid: number[][], row: number, col: number, value: number): boolean => {
-  // Apply the value
   const newGrid = grid.map(row => [...row]);
   newGrid[row][col] = value;
 
@@ -163,7 +171,6 @@ const forwardCheck = (grid: number[][], row: number, col: number, value: number)
     if (newGrid[row][i] === EMPTY_CELL && getLegalValues(newGrid, row, i).length === 0) {
       return false;
     }
-    
     // Check column
     if (newGrid[i][col] === EMPTY_CELL && getLegalValues(newGrid, i, col).length === 0) {
       return false;
