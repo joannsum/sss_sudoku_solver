@@ -16,7 +16,7 @@ export const BOX_SIZE = 3;
 export const EMPTY_CELL = 0;
 
 // Initial empty board
-const emptyBoard = Array(GRID_SIZE).fill().map(() => Array(GRID_SIZE).fill(EMPTY_CELL));
+const emptyBoard = Array(GRID_SIZE).fill(0).map(() => Array(GRID_SIZE).fill(EMPTY_CELL));
 
 const SudokuSolverSupreme = () => {
   // States
@@ -209,7 +209,7 @@ const SudokuSolverSupreme = () => {
     <div className="flex flex-col items-center min-h-screen p-4">
       <h1 className="text-4xl font-bold mt-4 mb-2 cyber-title">SSS._SUDOKU_SOLVER_SUPREME</h1>
       <h2 className="text-lg text-neon-pink mb-6">
-        <span className="">AI-algorithm powered sudoku solver and visualizer.</span>
+        <span className="">AI-algorithm powered sudoku solver and visualizergive .</span>
       </h2>
       
       <div className="section-divider"></div>
