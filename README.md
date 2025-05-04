@@ -28,7 +28,7 @@ This solver treats Sudoku as a constraint satisfaction problem (CSP) and impleme
 ## Project Structure
 
 ```
-src/
+sudoku_solver_supreme/src/
 ├── app/
 │   ├── page.tsx           # Main page component
 │   ├── layout.tsx         # App layout
@@ -41,9 +41,14 @@ src/
 │   ├── StatsDisplay.tsx         # Solution statistics
 │   └── TechnicalExplanation.tsx # AI technique info
 └── lib/
-    ├── sudokuSolver.ts          # Core solving algorithm
+    ├── sudokuSolver.ts          # CSP solving algorithm
+    ├── backtracking.ts          # Basic backtracking solving algorithm
+    ├── main.ts                  # calls test.ts to get results.txt
+    ├── test.ts                  # tests basic backtracking vs csp
+    ├── sudokuTestDataset.json   # dataset of 45 sudoku puzzles (15 easy, medium and hard)
     ├── difficultyAnalyzer.ts    # Difficulty metrics
     └── examplePuzzles.ts        # Sample puzzles
+
 ```
 
 ## Getting Started

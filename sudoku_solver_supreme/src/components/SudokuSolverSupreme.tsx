@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import SudokuGrid from './SudokuGrid';
 import ControlPanel from './ControlPanel';
@@ -7,6 +6,7 @@ import StatusMessage from './StatusMessage';
 import StatsDisplay from './StatsDisplay';
 import TechnicalExplanation from './TechnicalExplanation';
 import { solveWithBacktracking } from '../lib/sudokuSolver';
+import { solveWithBasicBacktracking } from '../lib/backtracking';
 import { calculateDifficultyScore } from '../lib/difficultyAnalyzer';
 import { examplePuzzles } from '../lib/examplePuzzles';
 
@@ -34,6 +34,9 @@ const SudokuSolverSupreme = () => {
   const [solutionPath, setSolutionPath] = useState<any[]>([]);
   const [currentPathIndex, setCurrentPathIndex] = useState(0);
   const [difficultyText, setDifficultyText] = useState('');
+  
+  // New state for algorithm toggle
+  const [useOptimizedSolver, setUseOptimizedSolver] = useState(true);
 
   // Start solving process
   const handleSolve = () => {
@@ -54,10 +57,13 @@ const SudokuSolverSupreme = () => {
     const boardCopy = board.map(row => [...row]);
     setOriginalBoard(boardCopy);
     
-    // Solve using our algorithm
+    // Solve using selected algorithm
     setTimeout(() => {
       try {
-        const result = solveWithBacktracking(boardCopy);
+        // Choose solver based on toggle
+        const result = useOptimizedSolver 
+          ? solveWithBacktracking(boardCopy)
+          : solveWithBasicBacktracking(boardCopy);
         
         const endTime = performance.now();
         const timeElapsed = Math.round((endTime - startTime) / 10) / 100;
@@ -214,8 +220,31 @@ const SudokuSolverSupreme = () => {
       
       <div className="section-divider"></div>
       
-      {/* Control panel */}
+      {/* Control panel with algorithm toggle */}
       <div className="w-full max-w-4xl mb-6 cyber-panel p-4">
+        {/* Algorithm toggle */}
+        <div className="mb-4 flex items-center justify-center gap-4">
+          <label className="flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={useOptimizedSolver}
+              onChange={(e) => setUseOptimizedSolver(e.target.checked)}
+              className="mr-2"
+              disabled={solving}
+            />
+            <span className={`text-sm ${solving ? 'text-gray-500' : 'text-neon-blue'}`}>
+              Use Optimized CSP Algorithm (MRV + LCV + Forward Checking)
+            </span>
+          </label>
+        </div>
+        
+        {/* Display current algorithm info */}
+        <div className="mb-4 text-center">
+          <p className="text-sm text-neon-green">
+            Current Algorithm: {useOptimizedSolver ? 'CSP with Heuristics' : 'Basic Backtracking'}
+          </p>
+        </div>
+        
         <ControlPanel 
           solving={solving}
           visualizeSteps={visualizeSteps}
@@ -241,6 +270,11 @@ const SudokuSolverSupreme = () => {
             currentPathIndex={currentPathIndex}
             difficultyText={difficultyText}
           />
+          
+          {/* Show which algorithm was used */}
+          <div className="mt-4 text-sm text-neon-pink">
+            Solved using: {useOptimizedSolver ? 'CSP with Heuristics' : 'Basic Backtracking'}
+          </div>
         </div>
       )}
       
