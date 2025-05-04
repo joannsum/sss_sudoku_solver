@@ -19,11 +19,11 @@ This solver treats Sudoku as a constraint satisfaction problem (CSP) and impleme
 3. **Least Constraining Value (LCV)**: Orders values to maintain maximum flexibility in the remaining grid
 4. **Forward Checking**: Maintains arc consistency during the search process
 5. **Difficulty Estimation**: Analyzes puzzle complexity using:
-   - Empty cell count
-   - Backtracking steps needed
-   - Average branching factor
-   - Constraint propagation efficiency
-   - Information entropy of the initial grid
+   - Backtracking count - primary difficulty indicator ([Pelánek, 2014](https://arxiv.org/abs/1403.7373))
+   - Average candidates per cell - quantifies decision complexity ([Mantere & Koljonen, 2007](https://ieeexplore.ieee.org/document/4424711))
+   - Given count analysis - considers clue sparsity, where 17 is the minimum for unique solutions ([McGuire et al., 2012](https://arxiv.org/abs/1201.0749))
+   - Naked/hidden singles count - measures available simple deductions ([Pelánek, 2014](https://arxiv.org/abs/1403.7373))
+   - Distribution balance - evaluates evenness of given placements
 
 ## Project Structure
 
@@ -125,11 +125,12 @@ function solveWithBacktracking(grid) {
 
 The difficulty analyzer considers multiple factors:
 
-- **Initial Empty Cells**: More empty cells generally means harder puzzles
-- **Backtracking**: Amount of backtracking required indicates complexity
-- **Branching Factor**: Average number of choices at decision points
-- **Constraint Propagation**: How effectively constraints reduce possibilities
-- **Information Entropy**: Uncertainty/complexity in the initial grid
+- More empty cells generally means harder puzzles
+- Amount of backtracking required indicates complexity
+- Average number of choices at decision points/cells
+- Number of pre-filled cells 'clues'
+- How effectively constraints reduce possibilities
+- Uncertainty/complexity in the initial grid
 
 ## Contributing
 
