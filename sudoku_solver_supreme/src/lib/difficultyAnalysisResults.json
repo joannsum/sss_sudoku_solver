@@ -1,28 +1,7 @@
 {
   "stats": {
     "easy": {
-      "correct": 1,
-      "total": 15,
-      "scores": [
-        56,
-        127,
-        86,
-        120,
-        116,
-        69,
-        118,
-        38,
-        95,
-        55,
-        85,
-        73,
-        75,
-        60,
-        57
-      ]
-    },
-    "medium": {
-      "correct": 10,
+      "correct": 2,
       "total": 15,
       "scores": [
         60,
@@ -40,6 +19,27 @@
         62,
         99,
         83
+      ]
+    },
+    "medium": {
+      "correct": 10,
+      "total": 15,
+      "scores": [
+        56,
+        127,
+        86,
+        120,
+        116,
+        69,
+        118,
+        38,
+        95,
+        55,
+        85,
+        73,
+        75,
+        60,
+        57
       ]
     },
     "hard": {
@@ -63,15 +63,15 @@
         118
       ]
     },
-    "accuracy": 48.888888888888886
+    "accuracy": 51.11111111111111
   },
   "results": [
     {
-      "id": "easy_01",
-      "expectedDifficulty": "easy",
+      "id": "medium_01",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 56,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 30,
         "backtrackCount": 0,
@@ -85,8 +85,8 @@
       }
     },
     {
-      "id": "easy_02",
-      "expectedDifficulty": "easy",
+      "id": "medium_02",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Hard",
       "score": 127,
       "correct": false,
@@ -103,11 +103,11 @@
       }
     },
     {
-      "id": "easy_03",
-      "expectedDifficulty": "easy",
+      "id": "medium_03",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 86,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 34,
         "backtrackCount": 2,
@@ -121,8 +121,8 @@
       }
     },
     {
-      "id": "easy_04",
-      "expectedDifficulty": "easy",
+      "id": "medium_04",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Hard",
       "score": 120,
       "correct": false,
@@ -139,8 +139,8 @@
       }
     },
     {
-      "id": "easy_05",
-      "expectedDifficulty": "easy",
+      "id": "medium_05",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Hard",
       "score": 116,
       "correct": false,
@@ -157,11 +157,11 @@
       }
     },
     {
-      "id": "easy_06",
-      "expectedDifficulty": "easy",
+      "id": "medium_06",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 69,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 33,
         "backtrackCount": 2,
@@ -175,8 +175,8 @@
       }
     },
     {
-      "id": "easy_07",
-      "expectedDifficulty": "easy",
+      "id": "medium_07",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Hard",
       "score": 118,
       "correct": false,
@@ -193,11 +193,11 @@
       }
     },
     {
-      "id": "easy_08",
-      "expectedDifficulty": "easy",
+      "id": "medium_08",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Easy",
       "score": 38,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 36,
         "backtrackCount": 0,
@@ -211,11 +211,11 @@
       }
     },
     {
-      "id": "easy_09",
-      "expectedDifficulty": "easy",
+      "id": "medium_09",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 95,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 24,
         "backtrackCount": 2,
@@ -229,11 +229,11 @@
       }
     },
     {
-      "id": "easy_10",
-      "expectedDifficulty": "easy",
+      "id": "medium_10",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 55,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 32,
         "backtrackCount": 0,
@@ -247,11 +247,11 @@
       }
     },
     {
-      "id": "easy_11",
-      "expectedDifficulty": "easy",
+      "id": "medium_11",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 85,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 30,
         "backtrackCount": 2,
@@ -265,11 +265,11 @@
       }
     },
     {
-      "id": "easy_12",
-      "expectedDifficulty": "easy",
+      "id": "medium_12",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 73,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 20,
         "backtrackCount": 0,
@@ -283,11 +283,11 @@
       }
     },
     {
-      "id": "easy_13",
-      "expectedDifficulty": "easy",
+      "id": "medium_13",
+      "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 75,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 27,
         "backtrackCount": 2,
@@ -301,43 +301,7 @@
       }
     },
     {
-      "id": "easy_14",
-      "expectedDifficulty": "easy",
-      "actualDifficulty": "Medium",
-      "score": 60,
-      "correct": false,
-      "metrics": {
-        "givenCount": 32,
-        "backtrackCount": 0,
-        "searchNodes": 49,
-        "averageCandidates": 3.2448979591836733,
-        "requiresGuessing": false,
-        "nakedSinglesCount": 3,
-        "hiddenSinglesCount": 6,
-        "minLocalGivens": 0,
-        "balanceScore": 0.3011152416356878
-      }
-    },
-    {
-      "id": "easy_15",
-      "expectedDifficulty": "easy",
-      "actualDifficulty": "Medium",
-      "score": 57,
-      "correct": false,
-      "metrics": {
-        "givenCount": 29,
-        "backtrackCount": 0,
-        "searchNodes": 52,
-        "averageCandidates": 3.1153846153846154,
-        "requiresGuessing": false,
-        "nakedSinglesCount": 4,
-        "hiddenSinglesCount": 6,
-        "minLocalGivens": 1,
-        "balanceScore": 0.3990147783251232
-      }
-    },
-    {
-      "id": "medium_01",
+      "id": "medium_14",
       "expectedDifficulty": "medium",
       "actualDifficulty": "Medium",
       "score": 60,
@@ -355,11 +319,47 @@
       }
     },
     {
-      "id": "medium_02",
+      "id": "medium_15",
       "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 57,
+      "correct": true,
+      "metrics": {
+        "givenCount": 29,
+        "backtrackCount": 0,
+        "searchNodes": 52,
+        "averageCandidates": 3.1153846153846154,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 4,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 1,
+        "balanceScore": 0.3990147783251232
+      }
+    },
+    {
+      "id": "easy_01",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 60,
+      "correct": false,
+      "metrics": {
+        "givenCount": 32,
+        "backtrackCount": 0,
+        "searchNodes": 49,
+        "averageCandidates": 3.2448979591836733,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 3,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 0,
+        "balanceScore": 0.3011152416356878
+      }
+    },
+    {
+      "id": "easy_02",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Easy",
       "score": 35,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 36,
         "backtrackCount": 0,
@@ -373,8 +373,8 @@
       }
     },
     {
-      "id": "medium_03",
-      "expectedDifficulty": "medium",
+      "id": "easy_03",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Hard",
       "score": 117,
       "correct": false,
@@ -391,11 +391,11 @@
       }
     },
     {
-      "id": "medium_04",
-      "expectedDifficulty": "medium",
+      "id": "easy_04",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 60,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 28,
         "backtrackCount": 0,
@@ -409,8 +409,8 @@
       }
     },
     {
-      "id": "medium_05",
-      "expectedDifficulty": "medium",
+      "id": "easy_05",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Hard",
       "score": 118,
       "correct": false,
@@ -427,8 +427,8 @@
       }
     },
     {
-      "id": "medium_06",
-      "expectedDifficulty": "medium",
+      "id": "easy_06",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Hard",
       "score": 115,
       "correct": false,
@@ -445,11 +445,11 @@
       }
     },
     {
-      "id": "medium_07",
-      "expectedDifficulty": "medium",
+      "id": "easy_07",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 66,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 27,
         "backtrackCount": 0,
@@ -463,11 +463,11 @@
       }
     },
     {
-      "id": "medium_08",
-      "expectedDifficulty": "medium",
+      "id": "easy_08",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 82,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 22,
         "backtrackCount": 2,
@@ -481,11 +481,11 @@
       }
     },
     {
-      "id": "medium_09",
-      "expectedDifficulty": "medium",
+      "id": "easy_09",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 88,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 23,
         "backtrackCount": 1,
@@ -499,11 +499,11 @@
       }
     },
     {
-      "id": "medium_10",
-      "expectedDifficulty": "medium",
+      "id": "easy_10",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Easy",
       "score": 42,
-      "correct": false,
+      "correct": true,
       "metrics": {
         "givenCount": 32,
         "backtrackCount": 0,
@@ -517,11 +517,11 @@
       }
     },
     {
-      "id": "medium_11",
-      "expectedDifficulty": "medium",
+      "id": "easy_11",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 87,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 19,
         "backtrackCount": 2,
@@ -535,11 +535,11 @@
       }
     },
     {
-      "id": "medium_12",
-      "expectedDifficulty": "medium",
+      "id": "easy_12",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 83,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 20,
         "backtrackCount": 1,
@@ -553,11 +553,11 @@
       }
     },
     {
-      "id": "medium_13",
-      "expectedDifficulty": "medium",
+      "id": "easy_13",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 62,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 27,
         "backtrackCount": 1,
@@ -571,11 +571,11 @@
       }
     },
     {
-      "id": "medium_14",
-      "expectedDifficulty": "medium",
+      "id": "easy_14",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 99,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 24,
         "backtrackCount": 3,
@@ -589,11 +589,11 @@
       }
     },
     {
-      "id": "medium_15",
-      "expectedDifficulty": "medium",
+      "id": "easy_15",
+      "expectedDifficulty": "easy",
       "actualDifficulty": "Medium",
       "score": 83,
-      "correct": true,
+      "correct": false,
       "metrics": {
         "givenCount": 20,
         "backtrackCount": 1,
