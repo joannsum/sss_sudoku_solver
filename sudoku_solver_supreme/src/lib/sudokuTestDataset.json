@@ -1,8 +1,8 @@
 {
     "puzzles": [
     {
-    "id": "easy_01",
-    "difficulty": "easy",
+    "id": "medium_01",
+    "difficulty": "medium",
     "givenCount": 38,
     "expectedBacktracks": 0,
     "grid": [
@@ -18,8 +18,8 @@
     ]
     },
     {
-    "id": "easy_02",
-    "difficulty": "easy",
+    "id": "medium_02",
+    "difficulty": "medium",
     "givenCount": 36,
     "expectedBacktracks": 0,
     "grid": [
@@ -35,8 +35,8 @@
     ]
     },
     {
-    "id": "easy_03",
-    "difficulty": "easy",
+    "id": "medium_03",
+    "difficulty": "medium",
     "givenCount": 37,
     "expectedBacktracks": 0,
     "grid": [
@@ -52,8 +52,8 @@
     ]
     },
     {
-    "id": "easy_04",
-    "difficulty": "easy",
+    "id": "medium_04",
+    "difficulty": "medium",
     "givenCount": 39,
     "expectedBacktracks": 0,
     "grid": [
@@ -69,8 +69,8 @@
     ]
     },
     {
-    "id": "easy_05",
-    "difficulty": "easy",
+    "id": "medium_05",
+    "difficulty": "medium",
     "givenCount": 35,
     "expectedBacktracks": 0,
     "grid": [
@@ -86,8 +86,8 @@
     ]
     },
     {
-    "id": "easy_06",
-    "difficulty": "easy",
+    "id": "medium_06",
+    "difficulty": "medium",
     "givenCount": 38,
     "expectedBacktracks": 0,
     "grid": [
@@ -103,8 +103,8 @@
     ]
     },
     {
-    "id": "easy_07",
-    "difficulty": "easy",
+    "id": "medium_07",
+    "difficulty": "medium",
     "givenCount": 37,
     "expectedBacktracks": 0,
     "grid": [
@@ -120,8 +120,8 @@
     ]
     },
     {
-    "id": "easy_08",
-    "difficulty": "easy",
+    "id": "medium_08",
+    "difficulty": "medium",
     "givenCount": 39,
     "expectedBacktracks": 0,
     "grid": [
@@ -137,8 +137,8 @@
     ]
     },
     {
-    "id": "easy_09",
-    "difficulty": "easy",
+    "id": "medium_09",
+    "difficulty": "medium",
     "givenCount": 36,
     "expectedBacktracks": 0,
     "grid": [
@@ -154,8 +154,8 @@
     ]
     },
     {
-    "id": "easy_10",
-    "difficulty": "easy",
+    "id": "medium_10",
+    "difficulty": "medium",
     "givenCount": 38,
     "expectedBacktracks": 0,
     "grid": [
@@ -171,8 +171,8 @@
     ]
     },
     {
-    "id": "easy_11",
-    "difficulty": "easy",
+    "id": "medium_11",
+    "difficulty": "medium",
     "givenCount": 37,
     "expectedBacktracks": 0,
     "grid": [
@@ -188,8 +188,8 @@
     ]
     },
     {
-    "id": "easy_12",
-    "difficulty": "easy",
+    "id": "medium_12",
+    "difficulty": "medium",
     "givenCount": 36,
     "expectedBacktracks": 0,
     "grid": [
@@ -205,8 +205,8 @@
     ]
     },
     {
-    "id": "easy_13",
-    "difficulty": "easy",
+    "id": "medium_13",
+    "difficulty": "medium",
     "givenCount": 39,
     "expectedBacktracks": 0,
     "grid": [
@@ -222,8 +222,8 @@
     ]
     },
     {
-    "id": "easy_14",
-    "difficulty": "easy",
+    "id": "medium_14",
+    "difficulty": "medium",
     "givenCount": 37,
     "expectedBacktracks": 0,
     "grid": [
@@ -239,8 +239,8 @@
     ]
     },
     {
-    "id": "easy_15",
-    "difficulty": "easy",
+    "id": "medium_15",
+    "difficulty": "medium",
     "givenCount": 38,
     "expectedBacktracks": 0,
     "grid": [
@@ -256,8 +256,8 @@
     ]
     },
     {
-    "id": "medium_01",
-    "difficulty": "medium",
+    "id": "easy_01",
+    "difficulty": "easy",
     "givenCount": 30,
     "expectedBacktracks": 3,
     "grid": [
@@ -273,8 +273,8 @@
     ]
     },
     {
-    "id": "medium_02",
-    "difficulty": "medium",
+    "id": "easy_02",
+    "difficulty": "easy",
     "givenCount": 29,
     "expectedBacktracks": 5,
     "grid": [
@@ -290,8 +290,8 @@
     ]
     },
     {
-    "id": "medium_03",
-    "difficulty": "medium",
+    "id": "easy_03",
+    "difficulty": "easy",
     "givenCount": 28,
     "expectedBacktracks": 4,
     "grid": [
@@ -307,8 +307,8 @@
     ]
     },
     {
-    "id": "medium_04",
-    "difficulty": "medium",
+    "id": "easy_04",
+    "difficulty": "easy",
     "givenCount": 31,
     "expectedBacktracks": 2,
     "grid": [
@@ -324,8 +324,8 @@
     ]
     },
     {
-    "id": "medium_05",
-    "difficulty": "medium",
+    "id": "easy_05",
+    "difficulty": "easy",
     "givenCount": 27,
     "expectedBacktracks": 6,
     "grid": [
@@ -341,8 +341,8 @@
     ]
     },
     {
-    "id": "medium_06",
-    "difficulty": "medium",
+    "id": "easy_06",
+    "difficulty": "easy",
     "givenCount": 29,
     "expectedBacktracks": 4,
     "grid": [
@@ -358,8 +358,8 @@
     ]
     },
     {
-    "id": "medium_07",
-    "difficulty": "medium",
+    "id": "easy_07",
+    "difficulty": "easy",
     "givenCount": 28,
     "expectedBacktracks": 5,
     "grid": [
@@ -375,8 +375,8 @@
     ]
     },
     {
-    "id": "medium_08",
-    "difficulty": "medium",
+    "id": "easy_08",
+    "difficulty": "easy",
     "givenCount": 30,
     "expectedBacktracks": 3,
     "grid": [
@@ -392,8 +392,8 @@
     ]
     },
     {
-    "id": "medium_09",
-    "difficulty": "medium",
+    "id": "easy_09",
+    "difficulty": "easy",
     "givenCount": 27,
     "expectedBacktracks": 7,
     "grid": [
@@ -409,8 +409,8 @@
     ]
     },
     {
-    "id": "medium_10",
-    "difficulty": "medium",
+    "id": "easy_10",
+    "difficulty": "easy",
     "givenCount": 32,
     "expectedBacktracks": 1,
     "grid": [
@@ -426,8 +426,8 @@
     ]
     },
     {
-    "id": "medium_11",
-    "difficulty": "medium",
+    "id": "easy_11",
+    "difficulty": "easy",
     "givenCount": 29,
     "expectedBacktracks": 4,
     "grid": [
@@ -444,8 +444,8 @@
       ]
     },
     {
-      "id": "medium_12",
-      "difficulty": "medium",
+      "id": "easy_12",
+      "difficulty": "easy",
       "givenCount": 28,
       "expectedBacktracks": 5,
       "grid": [
@@ -461,8 +461,8 @@
       ]
     },
     {
-      "id": "medium_13",
-      "difficulty": "medium",
+      "id": "easy_13",
+      "difficulty": "easy",
       "givenCount": 30,
       "expectedBacktracks": 3,
       "grid": [
@@ -478,8 +478,8 @@
       ]
     },
     {
-      "id": "medium_14",
-      "difficulty": "medium",
+      "id": "easy_14",
+      "difficulty": "easy",
       "givenCount": 29,
       "expectedBacktracks": 4,
       "grid": [
@@ -495,8 +495,8 @@
       ]
     },
     {
-      "id": "medium_15",
-      "difficulty": "medium",
+      "id": "easy_15",
+      "difficulty": "easy",
       "givenCount": 28,
       "expectedBacktracks": 5,
       "grid": [
