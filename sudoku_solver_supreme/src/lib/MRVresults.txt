@@ -1,0 +1,929 @@
+MRV Optimization Test Results
+===========================
+
+EASY Puzzles:
+Average time improvement: -36.8%
+Average node reduction: 90.9%
+Average backtracks: 2.3
+Average nodes explored (basic): 713524.3
+Average nodes explored (MRV): 47.8
+
+MEDIUM Puzzles:
+Average time improvement: -71.1%
+Average node reduction: 88.9%
+Average backtracks: 2.1
+Average nodes explored (basic): 25508700.5
+Average nodes explored (MRV): 42.1
+
+HARD Puzzles:
+Average time improvement: -38329.1%
+Average node reduction: 86.5%
+Average backtracks: 3.5
+Average nodes explored (basic): 5138772.6
+Average nodes explored (MRV): 58.7
+
+DETAILED RESULTS
+===============
+
+[
+  {
+    "id": "easy_01",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 4.172318000000018,
+      "backtracks": 4157,
+      "nodes": 4209
+    },
+    "mrv": {
+      "time": 1.509409000000005,
+      "backtracks": 0,
+      "nodes": 52
+    },
+    "improvement": {
+      "timeReduction": 63.82325124786753,
+      "nodeReduction": 98.76455215015443
+    }
+  },
+  {
+    "id": "easy_02",
+    "difficulty": "easy",
+    "givenCount": 36,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 25.18462500000004,
+      "backtracks": 49498,
+      "nodes": 49559
+    },
+    "mrv": {
+      "time": 118.05690400000003,
+      "backtracks": 7,
+      "nodes": 61
+    },
+    "improvement": {
+      "timeReduction": -368.76578070946005,
+      "nodeReduction": 99.8769143848746
+    }
+  },
+  {
+    "id": "easy_03",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 1.9237779999999702,
+      "backtracks": 4191,
+      "nodes": 4239
+    },
+    "mrv": {
+      "time": 2.679530999999997,
+      "backtracks": 3,
+      "nodes": 48
+    },
+    "improvement": {
+      "timeReduction": -39.28483432080202,
+      "nodeReduction": 98.86765746638359
+    }
+  },
+  {
+    "id": "easy_04",
+    "difficulty": "easy",
+    "givenCount": 39,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 4486.698239,
+      "backtracks": 9727332,
+      "nodes": 9727397
+    },
+    "mrv": {
+      "time": 6.090229999999792,
+      "backtracks": 5,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": 99.86426031625972,
+      "nodeReduction": 99.99933178423785
+    }
+  },
+  {
+    "id": "easy_05",
+    "difficulty": "easy",
+    "givenCount": 35,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 4.475080000000162,
+      "backtracks": 9949,
+      "nodes": 10008
+    },
+    "mrv": {
+      "time": 3.5737779999999475,
+      "backtracks": 3,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 20.14046676260942,
+      "nodeReduction": 99.41047162270183
+    }
+  },
+  {
+    "id": "easy_06",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.5266040000005887,
+      "backtracks": 988,
+      "nodes": 989
+    },
+    "mrv": {
+      "time": 0.7721659999997428,
+      "backtracks": 2,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": -46.631244730172874,
+      "nodeReduction": 99.89888776541962
+    }
+  },
+  {
+    "id": "easy_07",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 406.23347300000023,
+      "backtracks": 879359,
+      "nodes": 879418
+    },
+    "mrv": {
+      "time": 32.76785199999995,
+      "backtracks": 6,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 91.933739049613,
+      "nodeReduction": 99.99329101746837
+    }
+  },
+  {
+    "id": "easy_08",
+    "difficulty": "easy",
+    "givenCount": 39,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.060134000000289234,
+      "backtracks": 22,
+      "nodes": 68
+    },
+    "mrv": {
+      "time": 0.06627899999966758,
+      "backtracks": 0,
+      "nodes": 46
+    },
+    "improvement": {
+      "timeReduction": -10.218844579354085,
+      "nodeReduction": 32.35294117647059
+    }
+  },
+  {
+    "id": "easy_09",
+    "difficulty": "easy",
+    "givenCount": 36,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 1.1557329999996,
+      "backtracks": 2193,
+      "nodes": 2251
+    },
+    "mrv": {
+      "time": 5.319739999999911,
+      "backtracks": 3,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": -360.29143409435846,
+      "nodeReduction": 97.4233673922701
+    }
+  },
+  {
+    "id": "easy_10",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.3947420000004058,
+      "backtracks": 720,
+      "nodes": 770
+    },
+    "mrv": {
+      "time": 0.26504800000020623,
+      "backtracks": 1,
+      "nodes": 50
+    },
+    "improvement": {
+      "timeReduction": 32.855384022998884,
+      "nodeReduction": 93.5064935064935
+    }
+  },
+  {
+    "id": "easy_11",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.16266100000029837,
+      "backtracks": 243,
+      "nodes": 295
+    },
+    "mrv": {
+      "time": 0.2088949999997567,
+      "backtracks": 1,
+      "nodes": 52
+    },
+    "improvement": {
+      "timeReduction": -28.423531147216302,
+      "nodeReduction": 82.37288135593221
+    }
+  },
+  {
+    "id": "easy_12",
+    "difficulty": "easy",
+    "givenCount": 36,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.2438160000001517,
+      "backtracks": 416,
+      "nodes": 478
+    },
+    "mrv": {
+      "time": 0.5913460000001578,
+      "backtracks": 2,
+      "nodes": 62
+    },
+    "improvement": {
+      "timeReduction": -142.53781540169223,
+      "nodeReduction": 87.02928870292888
+    }
+  },
+  {
+    "id": "easy_13",
+    "difficulty": "easy",
+    "givenCount": 39,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 4.30746100000033,
+      "backtracks": 9990,
+      "nodes": 9991
+    },
+    "mrv": {
+      "time": 0.21734599999945203,
+      "backtracks": 2,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": 94.95419691555107,
+      "nodeReduction": 99.98999099189271
+    }
+  },
+  {
+    "id": "easy_14",
+    "difficulty": "easy",
+    "givenCount": 37,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 0.10608900000079302,
+      "backtracks": 151,
+      "nodes": 201
+    },
+    "mrv": {
+      "time": 0.1655240000000049,
+      "backtracks": 0,
+      "nodes": 50
+    },
+    "improvement": {
+      "timeReduction": -56.023715935457574,
+      "nodeReduction": 75.12437810945273
+    }
+  },
+  {
+    "id": "easy_15",
+    "difficulty": "easy",
+    "givenCount": 38,
+    "expectedBacktracks": 0,
+    "basic": {
+      "time": 5.533104999999523,
+      "backtracks": 12938,
+      "nodes": 12991
+    },
+    "mrv": {
+      "time": 0.16650100000060775,
+      "backtracks": 0,
+      "nodes": 53
+    },
+    "improvement": {
+      "timeReduction": 96.99082160919372,
+      "nodeReduction": 99.59202524824879
+    }
+  },
+  {
+    "id": "medium_01",
+    "difficulty": "medium",
+    "givenCount": 30,
+    "expectedBacktracks": 3,
+    "basic": {
+      "time": 0.09910499999932654,
+      "backtracks": 151,
+      "nodes": 201
+    },
+    "mrv": {
+      "time": 0.15853900000001886,
+      "backtracks": 0,
+      "nodes": 50
+    },
+    "improvement": {
+      "timeReduction": -59.97073810715524,
+      "nodeReduction": 75.12437810945273
+    }
+  },
+  {
+    "id": "medium_02",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 0.02716800000052899,
+      "backtracks": 9,
+      "nodes": 55
+    },
+    "mrv": {
+      "time": 0.0699109999995926,
+      "backtracks": 0,
+      "nodes": 46
+    },
+    "improvement": {
+      "timeReduction": -157.32847466957952,
+      "nodeReduction": 16.363636363636363
+    }
+  },
+  {
+    "id": "medium_03",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 35.17577000000074,
+      "backtracks": 78368,
+      "nodes": 78431
+    },
+    "mrv": {
+      "time": 40.058583,
+      "backtracks": 4,
+      "nodes": 63
+    },
+    "improvement": {
+      "timeReduction": -13.8811829847624,
+      "nodeReduction": 99.91967461845444
+    }
+  },
+  {
+    "id": "medium_04",
+    "difficulty": "medium",
+    "givenCount": 31,
+    "expectedBacktracks": 2,
+    "basic": {
+      "time": 2.6920329999993555,
+      "backtracks": 6098,
+      "nodes": 6152
+    },
+    "mrv": {
+      "time": 0.2748249999995096,
+      "backtracks": 0,
+      "nodes": 54
+    },
+    "improvement": {
+      "timeReduction": 89.79117269366404,
+      "nodeReduction": 99.12223667100129
+    }
+  },
+  {
+    "id": "medium_05",
+    "difficulty": "medium",
+    "givenCount": 27,
+    "expectedBacktracks": 6,
+    "basic": {
+      "time": 414.2362370000001,
+      "backtracks": 879359,
+      "nodes": 879418
+    },
+    "mrv": {
+      "time": 31.766327999999703,
+      "backtracks": 6,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 92.33134980414577,
+      "nodeReduction": 99.99329101746837
+    }
+  },
+  {
+    "id": "medium_06",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 4.316539999999804,
+      "backtracks": 8911,
+      "nodes": 8970
+    },
+    "mrv": {
+      "time": 0.9371999999993932,
+      "backtracks": 4,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 78.28816598480644,
+      "nodeReduction": 99.3422519509476
+    }
+  },
+  {
+    "id": "medium_07",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 3.8673909999997704,
+      "backtracks": 8645,
+      "nodes": 8700
+    },
+    "mrv": {
+      "time": 1.699797000000217,
+      "backtracks": 2,
+      "nodes": 55
+    },
+    "improvement": {
+      "timeReduction": 56.04796618701554,
+      "nodeReduction": 99.36781609195403
+    }
+  },
+  {
+    "id": "medium_08",
+    "difficulty": "medium",
+    "givenCount": 30,
+    "expectedBacktracks": 3,
+    "basic": {
+      "time": 3625.3569930000003,
+      "backtracks": 8107105,
+      "nodes": 8107106
+    },
+    "mrv": {
+      "time": 1234.7171209999997,
+      "backtracks": 2,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": 65.94219208248882,
+      "nodeReduction": 99.99998766514217
+    }
+  },
+  {
+    "id": "medium_09",
+    "difficulty": "medium",
+    "givenCount": 27,
+    "expectedBacktracks": 7,
+    "basic": {
+      "time": 2.220393999999942,
+      "backtracks": 9467,
+      "nodes": 9526
+    },
+    "mrv": {
+      "time": 0.47778400000061083,
+      "backtracks": 1,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 78.48201715548578,
+      "nodeReduction": 99.38064245223599
+    }
+  },
+  {
+    "id": "medium_10",
+    "difficulty": "medium",
+    "givenCount": 32,
+    "expectedBacktracks": 1,
+    "basic": {
+      "time": 0.06201900000087335,
+      "backtracks": 284,
+      "nodes": 285
+    },
+    "mrv": {
+      "time": 0.06886399999893911,
+      "backtracks": 1,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": -11.036940289216803,
+      "nodeReduction": 99.64912280701755
+    }
+  },
+  {
+    "id": "medium_11",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 85233.19129,
+      "backtracks": 373353499,
+      "nodes": 373353500
+    },
+    "mrv": {
+      "time": 2.8210289999988163,
+      "backtracks": 2,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": 99.99669022248574,
+      "nodeReduction": 99.99999973215733
+    }
+  },
+  {
+    "id": "medium_12",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 0.06474200000229757,
+      "backtracks": 95,
+      "nodes": 157
+    },
+    "mrv": {
+      "time": 0.44335299999511335,
+      "backtracks": 3,
+      "nodes": 62
+    },
+    "improvement": {
+      "timeReduction": -584.7996663361953,
+      "nodeReduction": 60.509554140127385
+    }
+  },
+  {
+    "id": "medium_13",
+    "difficulty": "medium",
+    "givenCount": 30,
+    "expectedBacktracks": 3,
+    "basic": {
+      "time": 0.008241000003181398,
+      "backtracks": 6,
+      "nodes": 7
+    },
+    "mrv": {
+      "time": 0.08038800000213087,
+      "backtracks": 1,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": -875.4641423504122,
+      "nodeReduction": 85.71428571428571
+    }
+  },
+  {
+    "id": "medium_14",
+    "difficulty": "medium",
+    "givenCount": 29,
+    "expectedBacktracks": 4,
+    "basic": {
+      "time": 2.8222160000004806,
+      "backtracks": 12458,
+      "nodes": 12516
+    },
+    "mrv": {
+      "time": 3.3307309999945574,
+      "backtracks": 3,
+      "nodes": 58
+    },
+    "improvement": {
+      "timeReduction": -18.01828775664195,
+      "nodeReduction": 99.53659316075424
+    }
+  },
+  {
+    "id": "medium_15",
+    "difficulty": "medium",
+    "givenCount": 28,
+    "expectedBacktracks": 5,
+    "basic": {
+      "time": 38.7215409999917,
+      "backtracks": 165421,
+      "nodes": 165483
+    },
+    "mrv": {
+      "time": 2.939199999993434,
+      "backtracks": 2,
+      "nodes": 62
+    },
+    "improvement": {
+      "timeReduction": 92.40939300428653,
+      "nodeReduction": 99.96253391587051
+    }
+  },
+  {
+    "id": "hard_01",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 12,
+    "basic": {
+      "time": 15591.776536999998,
+      "backtracks": 69175252,
+      "nodes": 69175317
+    },
+    "mrv": {
+      "time": 237.73077300000296,
+      "backtracks": 8,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": 98.47528104038781,
+      "nodeReduction": 99.99990603584801
+    }
+  },
+  {
+    "id": "hard_02",
+    "difficulty": "hard",
+    "givenCount": 23,
+    "expectedBacktracks": 15,
+    "basic": {
+      "time": 11.167759999996633,
+      "backtracks": 49498,
+      "nodes": 49559
+    },
+    "mrv": {
+      "time": 43.39217700000154,
+      "backtracks": 7,
+      "nodes": 61
+    },
+    "improvement": {
+      "timeReduction": -288.54861673258216,
+      "nodeReduction": 99.8769143848746
+    }
+  },
+  {
+    "id": "hard_03",
+    "difficulty": "hard",
+    "givenCount": 21,
+    "expectedBacktracks": 18,
+    "basic": {
+      "time": 2.3454799999890383,
+      "backtracks": 10227,
+      "nodes": 10291
+    },
+    "mrv": {
+      "time": 1.572546000010334,
+      "backtracks": 4,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": 32.95419274444109,
+      "nodeReduction": 99.37809736663104
+    }
+  },
+  {
+    "id": "hard_04",
+    "difficulty": "hard",
+    "givenCount": 24,
+    "expectedBacktracks": 10,
+    "basic": {
+      "time": 0.41520699999819044,
+      "backtracks": 2191,
+      "nodes": 2192
+    },
+    "mrv": {
+      "time": 0.16363799999817275,
+      "backtracks": 1,
+      "nodes": 1
+    },
+    "improvement": {
+      "timeReduction": 60.58881473605071,
+      "nodeReduction": 99.9543795620438
+    }
+  },
+  {
+    "id": "hard_05",
+    "difficulty": "hard",
+    "givenCount": 20,
+    "expectedBacktracks": 20,
+    "basic": {
+      "time": 0.03436199999123346,
+      "backtracks": 64,
+      "nodes": 131
+    },
+    "mrv": {
+      "time": 197.02287600000273,
+      "backtracks": 3,
+      "nodes": 67
+    },
+    "improvement": {
+      "timeReduction": -573274.297335044,
+      "nodeReduction": 48.854961832061065
+    }
+  },
+  {
+    "id": "hard_06",
+    "difficulty": "hard",
+    "givenCount": 25,
+    "expectedBacktracks": 9,
+    "basic": {
+      "time": 1.2755809999944177,
+      "backtracks": 6098,
+      "nodes": 6152
+    },
+    "mrv": {
+      "time": 0.3004569999902742,
+      "backtracks": 0,
+      "nodes": 54
+    },
+    "improvement": {
+      "timeReduction": 76.44547857081682,
+      "nodeReduction": 99.12223667100129
+    }
+  },
+  {
+    "id": "hard_07",
+    "difficulty": "hard",
+    "givenCount": 23,
+    "expectedBacktracks": 14,
+    "basic": {
+      "time": 1635.8754400000034,
+      "backtracks": 6943131,
+      "nodes": 6943196
+    },
+    "mrv": {
+      "time": 53.877588000003016,
+      "backtracks": 9,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": 96.70649814267016,
+      "nodeReduction": 99.9990638316994
+    }
+  },
+  {
+    "id": "hard_08",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 16,
+    "basic": {
+      "time": 0.49580299999797717,
+      "backtracks": 1682,
+      "nodes": 1747
+    },
+    "mrv": {
+      "time": 0.48483799998939503,
+      "backtracks": 5,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": 2.2115638688404213,
+      "nodeReduction": 96.27933600457928
+    }
+  },
+  {
+    "id": "hard_09",
+    "difficulty": "hard",
+    "givenCount": 21,
+    "expectedBacktracks": 17,
+    "basic": {
+      "time": 0.03918100000009872,
+      "backtracks": 77,
+      "nodes": 143
+    },
+    "mrv": {
+      "time": 0.26246399999945424,
+      "backtracks": 0,
+      "nodes": 66
+    },
+    "improvement": {
+      "timeReduction": -569.8757050580458,
+      "nodeReduction": 53.84615384615385
+    }
+  },
+  {
+    "id": "hard_10",
+    "difficulty": "hard",
+    "givenCount": 24,
+    "expectedBacktracks": 11,
+    "basic": {
+      "time": 0.04092700000910554,
+      "backtracks": 101,
+      "nodes": 161
+    },
+    "mrv": {
+      "time": 0.2557589999923948,
+      "backtracks": 2,
+      "nodes": 60
+    },
+    "improvement": {
+      "timeReduction": -524.9150925684582,
+      "nodeReduction": 62.732919254658384
+    }
+  },
+  {
+    "id": "hard_11",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 13,
+    "basic": {
+      "time": 0.2174150000064401,
+      "backtracks": 777,
+      "nodes": 841
+    },
+    "mrv": {
+      "time": 0.27915599998959806,
+      "backtracks": 2,
+      "nodes": 64
+    },
+    "improvement": {
+      "timeReduction": -28.397764635066174,
+      "nodeReduction": 92.39001189060642
+    }
+  },
+  {
+    "id": "hard_12",
+    "difficulty": "hard",
+    "givenCount": 23,
+    "expectedBacktracks": 14,
+    "basic": {
+      "time": 2.222559000001638,
+      "backtracks": 9949,
+      "nodes": 10008
+    },
+    "mrv": {
+      "time": 1.217264000006253,
+      "backtracks": 3,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 45.231420178031016,
+      "nodeReduction": 99.41047162270183
+    }
+  },
+  {
+    "id": "hard_13",
+    "difficulty": "hard",
+    "givenCount": 21,
+    "expectedBacktracks": 19,
+    "basic": {
+      "time": 0.03338399999483954,
+      "backtracks": 62,
+      "nodes": 127
+    },
+    "mrv": {
+      "time": 0.30241299999761395,
+      "backtracks": 3,
+      "nodes": 65
+    },
+    "improvement": {
+      "timeReduction": -805.8620897566517,
+      "nodeReduction": 48.818897637795274
+    }
+  },
+  {
+    "id": "hard_14",
+    "difficulty": "hard",
+    "givenCount": 20,
+    "expectedBacktracks": 21,
+    "basic": {
+      "time": 0.5250670000095852,
+      "backtracks": 2240,
+      "nodes": 2306
+    },
+    "mrv": {
+      "time": 0.2633009999990463,
+      "backtracks": 0,
+      "nodes": 66
+    },
+    "improvement": {
+      "timeReduction": 49.85382817921528,
+      "nodeReduction": 97.13790112749349
+    }
+  },
+  {
+    "id": "hard_15",
+    "difficulty": "hard",
+    "givenCount": 22,
+    "expectedBacktracks": 15,
+    "basic": {
+      "time": 201.76796200001263,
+      "backtracks": 879359,
+      "nodes": 879418
+    },
+    "mrv": {
+      "time": 14.92445299999963,
+      "backtracks": 6,
+      "nodes": 59
+    },
+    "improvement": {
+      "timeReduction": 92.60316015879731,
+      "nodeReduction": 99.99329101746837
+    }
+  }
+]

@@ -1,0 +1,880 @@
+{
+  "stats": {
+    "easy": {
+      "correct": 1,
+      "total": 15,
+      "scores": [
+        56,
+        127,
+        86,
+        120,
+        116,
+        69,
+        118,
+        38,
+        95,
+        55,
+        85,
+        73,
+        75,
+        60,
+        57
+      ]
+    },
+    "medium": {
+      "correct": 10,
+      "total": 15,
+      "scores": [
+        60,
+        35,
+        117,
+        60,
+        118,
+        115,
+        66,
+        82,
+        88,
+        42,
+        87,
+        83,
+        62,
+        99,
+        83
+      ]
+    },
+    "hard": {
+      "correct": 11,
+      "total": 15,
+      "scores": [
+        158,
+        127,
+        112,
+        62,
+        82,
+        60,
+        132,
+        89,
+        91,
+        84,
+        83,
+        116,
+        104,
+        92,
+        118
+      ]
+    },
+    "accuracy": 48.888888888888886
+  },
+  "results": [
+    {
+      "id": "easy_01",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 56,
+      "correct": false,
+      "metrics": {
+        "givenCount": 30,
+        "backtrackCount": 0,
+        "searchNodes": 51,
+        "averageCandidates": 3,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 4,
+        "hiddenSinglesCount": 7,
+        "minLocalGivens": 1,
+        "balanceScore": 0.38028169014084506
+      }
+    },
+    {
+      "id": "easy_02",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Hard",
+      "score": 127,
+      "correct": false,
+      "metrics": {
+        "givenCount": 21,
+        "backtrackCount": 5,
+        "searchNodes": 60,
+        "averageCandidates": 4.233333333333333,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.5510204081632653
+      }
+    },
+    {
+      "id": "easy_03",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 86,
+      "correct": false,
+      "metrics": {
+        "givenCount": 34,
+        "backtrackCount": 2,
+        "searchNodes": 47,
+        "averageCandidates": 3.276595744680851,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 2,
+        "balanceScore": 0.452513966480447
+      }
+    },
+    {
+      "id": "easy_04",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Hard",
+      "score": 120,
+      "correct": false,
+      "metrics": {
+        "givenCount": 17,
+        "backtrackCount": 4,
+        "searchNodes": 64,
+        "averageCandidates": 4.703125,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6480000000000001
+      }
+    },
+    {
+      "id": "easy_05",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Hard",
+      "score": 116,
+      "correct": false,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 5,
+        "searchNodes": 58,
+        "averageCandidates": 3.7413793103448274,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 2,
+        "balanceScore": 0.8019801980198021
+      }
+    },
+    {
+      "id": "easy_06",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 69,
+      "correct": false,
+      "metrics": {
+        "givenCount": 33,
+        "backtrackCount": 2,
+        "searchNodes": 0,
+        "averageCandidates": 3.5,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 4,
+        "minLocalGivens": 1,
+        "balanceScore": 0.574468085106383
+      }
+    },
+    {
+      "id": "easy_07",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Hard",
+      "score": 118,
+      "correct": false,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 4,
+        "searchNodes": 58,
+        "averageCandidates": 4.068965517241379,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.45251396648044684
+      }
+    },
+    {
+      "id": "easy_08",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Easy",
+      "score": 38,
+      "correct": true,
+      "metrics": {
+        "givenCount": 36,
+        "backtrackCount": 0,
+        "searchNodes": 45,
+        "averageCandidates": 1.8888888888888888,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 17,
+        "hiddenSinglesCount": 13,
+        "minLocalGivens": 3,
+        "balanceScore": 0.5510204081632653
+      }
+    },
+    {
+      "id": "easy_09",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 95,
+      "correct": false,
+      "metrics": {
+        "givenCount": 24,
+        "backtrackCount": 2,
+        "searchNodes": 57,
+        "averageCandidates": 3.789473684210526,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 1,
+        "minLocalGivens": 0,
+        "balanceScore": 0.4576271186440678
+      }
+    },
+    {
+      "id": "easy_10",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 55,
+      "correct": false,
+      "metrics": {
+        "givenCount": 32,
+        "backtrackCount": 0,
+        "searchNodes": 49,
+        "averageCandidates": 2.877551020408163,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 1,
+        "hiddenSinglesCount": 7,
+        "minLocalGivens": 2,
+        "balanceScore": 0.4850299401197604
+      }
+    },
+    {
+      "id": "easy_11",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 85,
+      "correct": false,
+      "metrics": {
+        "givenCount": 30,
+        "backtrackCount": 2,
+        "searchNodes": 51,
+        "averageCandidates": 3.372549019607843,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 1,
+        "hiddenSinglesCount": 3,
+        "minLocalGivens": 0,
+        "balanceScore": 0.5094339622641509
+      }
+    },
+    {
+      "id": "easy_12",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 73,
+      "correct": false,
+      "metrics": {
+        "givenCount": 20,
+        "backtrackCount": 0,
+        "searchNodes": 61,
+        "averageCandidates": 4.459016393442623,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6806722689075629
+      }
+    },
+    {
+      "id": "easy_13",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 75,
+      "correct": false,
+      "metrics": {
+        "givenCount": 27,
+        "backtrackCount": 2,
+        "searchNodes": 0,
+        "averageCandidates": 3.611111111111111,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 3,
+        "minLocalGivens": 1,
+        "balanceScore": 0.44262295081967207
+      }
+    },
+    {
+      "id": "easy_14",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 60,
+      "correct": false,
+      "metrics": {
+        "givenCount": 32,
+        "backtrackCount": 0,
+        "searchNodes": 49,
+        "averageCandidates": 3.2448979591836733,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 3,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 0,
+        "balanceScore": 0.3011152416356878
+      }
+    },
+    {
+      "id": "easy_15",
+      "expectedDifficulty": "easy",
+      "actualDifficulty": "Medium",
+      "score": 57,
+      "correct": false,
+      "metrics": {
+        "givenCount": 29,
+        "backtrackCount": 0,
+        "searchNodes": 52,
+        "averageCandidates": 3.1153846153846154,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 4,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 1,
+        "balanceScore": 0.3990147783251232
+      }
+    },
+    {
+      "id": "medium_01",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 60,
+      "correct": true,
+      "metrics": {
+        "givenCount": 32,
+        "backtrackCount": 0,
+        "searchNodes": 49,
+        "averageCandidates": 3.2448979591836733,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 3,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 0,
+        "balanceScore": 0.3011152416356878
+      }
+    },
+    {
+      "id": "medium_02",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Easy",
+      "score": 35,
+      "correct": false,
+      "metrics": {
+        "givenCount": 36,
+        "backtrackCount": 0,
+        "searchNodes": 45,
+        "averageCandidates": 1.9333333333333333,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 15,
+        "hiddenSinglesCount": 12,
+        "minLocalGivens": 3,
+        "balanceScore": 0.8709677419354839
+      }
+    },
+    {
+      "id": "medium_03",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Hard",
+      "score": 117,
+      "correct": false,
+      "metrics": {
+        "givenCount": 19,
+        "backtrackCount": 4,
+        "searchNodes": 62,
+        "averageCandidates": 4.209677419354839,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6480000000000001
+      }
+    },
+    {
+      "id": "medium_04",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 60,
+      "correct": true,
+      "metrics": {
+        "givenCount": 28,
+        "backtrackCount": 0,
+        "searchNodes": 53,
+        "averageCandidates": 3.339622641509434,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 2,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 1,
+        "balanceScore": 0.3767441860465116
+      }
+    },
+    {
+      "id": "medium_05",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Hard",
+      "score": 118,
+      "correct": false,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 4,
+        "searchNodes": 58,
+        "averageCandidates": 4.068965517241379,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.45251396648044684
+      }
+    },
+    {
+      "id": "medium_06",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Hard",
+      "score": 115,
+      "correct": false,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 4,
+        "searchNodes": 58,
+        "averageCandidates": 3.8448275862068964,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.680672268907563
+      }
+    },
+    {
+      "id": "medium_07",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 66,
+      "correct": true,
+      "metrics": {
+        "givenCount": 27,
+        "backtrackCount": 0,
+        "searchNodes": 54,
+        "averageCandidates": 3.8518518518518516,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 4,
+        "minLocalGivens": 1,
+        "balanceScore": 0.38028169014084506
+      }
+    },
+    {
+      "id": "medium_08",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 82,
+      "correct": true,
+      "metrics": {
+        "givenCount": 22,
+        "backtrackCount": 2,
+        "searchNodes": 0,
+        "averageCandidates": 4.593220338983051,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 4,
+        "minLocalGivens": 0,
+        "balanceScore": 0.3568281938325991
+      }
+    },
+    {
+      "id": "medium_09",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 88,
+      "correct": true,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 1,
+        "searchNodes": 58,
+        "averageCandidates": 4.120689655172414,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 2,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.32270916334661354
+      }
+    },
+    {
+      "id": "medium_10",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Easy",
+      "score": 42,
+      "correct": false,
+      "metrics": {
+        "givenCount": 32,
+        "backtrackCount": 0,
+        "searchNodes": 0,
+        "averageCandidates": 3.0816326530612246,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 4,
+        "hiddenSinglesCount": 9,
+        "minLocalGivens": 2,
+        "balanceScore": 0.4111675126903553
+      }
+    },
+    {
+      "id": "medium_11",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 87,
+      "correct": true,
+      "metrics": {
+        "givenCount": 19,
+        "backtrackCount": 2,
+        "searchNodes": 0,
+        "averageCandidates": 4.709677419354839,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 0,
+        "balanceScore": 0.3990147783251232
+      }
+    },
+    {
+      "id": "medium_12",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 83,
+      "correct": true,
+      "metrics": {
+        "givenCount": 20,
+        "backtrackCount": 1,
+        "searchNodes": 61,
+        "averageCandidates": 4.573770491803279,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6806722689075629
+      }
+    },
+    {
+      "id": "medium_13",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 62,
+      "correct": true,
+      "metrics": {
+        "givenCount": 27,
+        "backtrackCount": 1,
+        "searchNodes": 0,
+        "averageCandidates": 3.5,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 2,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 2,
+        "balanceScore": 0.574468085106383
+      }
+    },
+    {
+      "id": "medium_14",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 99,
+      "correct": true,
+      "metrics": {
+        "givenCount": 24,
+        "backtrackCount": 3,
+        "searchNodes": 57,
+        "averageCandidates": 3.8947368421052633,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 2,
+        "hiddenSinglesCount": 3,
+        "minLocalGivens": 0,
+        "balanceScore": 0.5294117647058825
+      }
+    },
+    {
+      "id": "medium_15",
+      "expectedDifficulty": "medium",
+      "actualDifficulty": "Medium",
+      "score": 83,
+      "correct": true,
+      "metrics": {
+        "givenCount": 20,
+        "backtrackCount": 1,
+        "searchNodes": 61,
+        "averageCandidates": 4.409836065573771,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6806722689075629
+      }
+    },
+    {
+      "id": "hard_01",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 158,
+      "correct": true,
+      "metrics": {
+        "givenCount": 17,
+        "backtrackCount": 8,
+        "searchNodes": 64,
+        "averageCandidates": 4.734375,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 0,
+        "balanceScore": 0.618320610687023
+      }
+    },
+    {
+      "id": "hard_02",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 127,
+      "correct": true,
+      "metrics": {
+        "givenCount": 21,
+        "backtrackCount": 5,
+        "searchNodes": 60,
+        "averageCandidates": 4.233333333333333,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.5510204081632653
+      }
+    },
+    {
+      "id": "hard_03",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 112,
+      "correct": true,
+      "metrics": {
+        "givenCount": 18,
+        "backtrackCount": 3,
+        "searchNodes": 63,
+        "averageCandidates": 4.714285714285714,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.5510204081632653
+      }
+    },
+    {
+      "id": "hard_04",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Medium",
+      "score": 62,
+      "correct": false,
+      "metrics": {
+        "givenCount": 25,
+        "backtrackCount": 1,
+        "searchNodes": 0,
+        "averageCandidates": 3.5357142857142856,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 2,
+        "hiddenSinglesCount": 4,
+        "minLocalGivens": 1,
+        "balanceScore": 0.5031055900621119
+      }
+    },
+    {
+      "id": "hard_05",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 82,
+      "correct": true,
+      "metrics": {
+        "givenCount": 15,
+        "backtrackCount": 0,
+        "searchNodes": 66,
+        "averageCandidates": 5.378787878787879,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6923076923076923
+      }
+    },
+    {
+      "id": "hard_06",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Medium",
+      "score": 60,
+      "correct": false,
+      "metrics": {
+        "givenCount": 28,
+        "backtrackCount": 0,
+        "searchNodes": 53,
+        "averageCandidates": 3.339622641509434,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 2,
+        "hiddenSinglesCount": 6,
+        "minLocalGivens": 1,
+        "balanceScore": 0.3767441860465116
+      }
+    },
+    {
+      "id": "hard_07",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 132,
+      "correct": true,
+      "metrics": {
+        "givenCount": 17,
+        "backtrackCount": 5,
+        "searchNodes": 64,
+        "averageCandidates": 4.75,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.6183206106870228
+      }
+    },
+    {
+      "id": "hard_08",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 89,
+      "correct": true,
+      "metrics": {
+        "givenCount": 17,
+        "backtrackCount": 1,
+        "searchNodes": 64,
+        "averageCandidates": 4.875,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.801980198019802
+      }
+    },
+    {
+      "id": "hard_09",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 91,
+      "correct": true,
+      "metrics": {
+        "givenCount": 16,
+        "backtrackCount": 1,
+        "searchNodes": 65,
+        "averageCandidates": 5.107692307692307,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.7168141592920354
+      }
+    },
+    {
+      "id": "hard_10",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Medium",
+      "score": 84,
+      "correct": false,
+      "metrics": {
+        "givenCount": 22,
+        "backtrackCount": 1,
+        "searchNodes": 59,
+        "averageCandidates": 4.610169491525424,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 1,
+        "balanceScore": 0.4850299401197604
+      }
+    },
+    {
+      "id": "hard_11",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Medium",
+      "score": 83,
+      "correct": false,
+      "metrics": {
+        "givenCount": 18,
+        "backtrackCount": 0,
+        "searchNodes": 63,
+        "averageCandidates": 4.936507936507937,
+        "requiresGuessing": false,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.5510204081632653
+      }
+    },
+    {
+      "id": "hard_12",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 116,
+      "correct": true,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 5,
+        "searchNodes": 58,
+        "averageCandidates": 3.7413793103448274,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 2,
+        "minLocalGivens": 2,
+        "balanceScore": 0.8019801980198021
+      }
+    },
+    {
+      "id": "hard_13",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 104,
+      "correct": true,
+      "metrics": {
+        "givenCount": 17,
+        "backtrackCount": 2,
+        "searchNodes": 64,
+        "averageCandidates": 5.109375,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.5664335664335665
+      }
+    },
+    {
+      "id": "hard_14",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 92,
+      "correct": true,
+      "metrics": {
+        "givenCount": 16,
+        "backtrackCount": 1,
+        "searchNodes": 65,
+        "averageCandidates": 5.323076923076923,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 1,
+        "balanceScore": 0.6183206106870228
+      }
+    },
+    {
+      "id": "hard_15",
+      "expectedDifficulty": "hard",
+      "actualDifficulty": "Hard",
+      "score": 118,
+      "correct": true,
+      "metrics": {
+        "givenCount": 23,
+        "backtrackCount": 4,
+        "searchNodes": 58,
+        "averageCandidates": 4.068965517241379,
+        "requiresGuessing": true,
+        "nakedSinglesCount": 0,
+        "hiddenSinglesCount": 0,
+        "minLocalGivens": 0,
+        "balanceScore": 0.45251396648044684
+      }
+    }
+  ]
+}
