@@ -43,10 +43,14 @@ sudoku_solver_supreme/src/
 └── lib/
     ├── sudokuSolver.ts          # CSP solving algorithm
     ├── backtracking.ts          # Basic backtracking solving algorithm
-    ├── main.ts                  # calls test.ts to get results.txt
-    ├── test.ts                  # tests basic backtracking vs csp
-    ├── sudokuTestDataset.json   # dataset of 45 sudoku puzzles (15 easy, medium and hard)
+    ├── main.ts                  # use to test the test files
+    ├── test.ts                  # tests basic backtracking vs MRV+LCV+FT
+    ├── testMRV.ts               # tests basic backtracking vs optimizedMRV
+    ├── sudokuTestDataset.json   # dataset of 45 sudoku puzzles (15 easy, medium,hard)
     ├── difficultyAnalyzer.ts    # Difficulty metrics
+    ├── difficultyAnalyzerTest.ts  # test difficulty analyzer
+    ├── results.txt   	         # results of test.ts
+    ├── MRVresults.txt           # result of testMRV.ts
     └── examplePuzzles.ts        # Sample puzzles
 
 ```
